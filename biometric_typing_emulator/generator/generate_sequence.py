@@ -317,9 +317,6 @@ class TypingSequenceGenerator:
                     new_sequence.insert(insert_pos_error, double_data)
                     
                     # Calculate how many characters were typed *after* the error was inserted
-                    # before the correction starts.
-                    # We need to ensure we don't try to access indices beyond the original sequence length
-                    # when figuring out what was typed during the delay.
                     effective_delay = 0
                     original_indices_to_retype = []
                     for i in range(delay):
@@ -329,8 +326,6 @@ class TypingSequenceGenerator:
                            original_indices_to_retype.append(original_delayed_index)
                         else:
                            break # Stop if we reach the end of the original sequence
-
-                    if effective_delay <= 0: continue # No actual delay possible or needed
 
                     # 2. Calculate where the correction (backspaces) should start
                     correction_start_index = insert_pos_error + effective_delay
@@ -429,8 +424,6 @@ class TypingSequenceGenerator:
                         else:
                             break
 
-                    if effective_delay <= 0: continue
-
                     # 2. Calculate where correction (backspaces) starts
                     # It's after the inserted typo and the delayed characters
                     correction_start_index = insert_pos_error + 1 + effective_delay # +1 for the inserted typo
@@ -457,6 +450,21 @@ class TypingSequenceGenerator:
                     retype_start_index = correction_start_index + num_backspaces
                     last_key_before_retype = "backspace"
 
+                    # 4a. Re-type the original key that was initially skipped due to the typo
+                    # Calculate timing relative to the last backspace
+                    correct_key_retype_flight = self.get_flight_time(last_key_before_retype, correct_key)
+                    correct_key_retype_dwell = self.get_dwell_time(correct_key)
+                    correct_key_data = {
+                        "key": correct_key,
+                        "dwell": correct_key_retype_dwell,
+                        "flight": correct_key_retype_flight,
+                        "is_correction": 0
+                    }
+                    new_sequence.insert(retype_start_index, correct_key_data)
+                    retype_start_index += 1
+                    last_key_before_retype = correct_key # Update for next potential retype
+
+                    # 4b. Re-type the original characters typed during the delay (if any)
                     for original_index in original_indices_to_retype:
                         orig_key_data = sequence[original_index]
                         orig_key = orig_key_data["key"]
@@ -539,8 +547,6 @@ class TypingSequenceGenerator:
                             else:
                                 break
                         
-                        if effective_delay <= 0: continue
-
                         # 1. Adjust flight time for the key immediately after the (initially) missed key
                         # This happens *before* the delay and correction are added
                         if error_pos > 0 and error_pos + 1 < len(new_sequence):
@@ -725,8 +731,6 @@ class TypingSequenceGenerator:
                             else:
                                 break
                         
-                        # If delay is 0, we still need to correct the swap itself
-                        
                         # 2. Calculate where correction starts
                         # It's after the swapped pair and the delayed characters
                         correction_start_index = error_pos + 2 + effective_delay
@@ -803,7 +807,21 @@ class TypingSequenceGenerator:
         for i, char in enumerate(text):
             # Get dwell time for this character
             dwell_time = self.get_dwell_time(char)
-            
+
+            # --- Map special whitespace characters to profile keys --- #
+            key_str = char # Default to the character itself
+            if char == '\t':
+                key_str = "tab"
+            elif char == '\n':
+                key_str = "enter"
+            elif char == ' ': # Ensure literal spaces use the "space" key if profile expects it
+                # Check if "space" exists in profile, otherwise keep ' '
+                if "space" in self.profile["mean_dwell_times"] or \
+                   any(f"→space" in k or f"space→" in k for k in self.profile["mean_flight_times"]):
+                    key_str = "space"
+                # else: keep key_str = ' ' - allows profiles without explicit "space" recording
+            # --- End Mapping ---
+
             # Get flight time from previous character
             flight_time = 0
             if i > 0:
@@ -812,7 +830,7 @@ class TypingSequenceGenerator:
             
             # Add to sequence
             char_data = {
-                "key": char,
+                "key": key_str, # Use the mapped key string
                 "dwell": dwell_time,
                 "flight": flight_time,
                 "is_correction": 0
