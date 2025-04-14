@@ -308,40 +308,84 @@ class TypingSequenceGenerator:
                         next_key = new_sequence[error_pos + 3]["key"]
                         new_sequence[error_pos + 3]["flight"] = self.get_flight_time("backspace", next_key)
                 else:
-                    # Get how many characters to type before correcting
+                    # --- Refactored Delayed Correction for double_letter ---
                     delay = random.randint(1, 3)
-                    # Add after some delay - will need to add multiple backspaces
-                    new_sequence.insert(error_pos + 1, double_data)
+                    insert_pos_error = error_pos + 1 # Position after the original correct key
+
+                    # 1. Insert the duplicated character
+                    double_data = {"key": double_key, "dwell": double_dwell, "flight": double_flight}
+                    new_sequence.insert(insert_pos_error, double_data)
                     
-                    # Add backspaces after the delay
-                    insert_pos = error_pos + 1 + delay
-                    if insert_pos < len(new_sequence):
-                        for i in range(delay + 1):  # +1 to delete the extra char too
-                            bs_data = {
-                                "key": "backspace", 
-                                "dwell": self.get_dwell_time("backspace"),
-                                "flight": self.get_flight_time(
-                                    "backspace" if i > 0 else new_sequence[insert_pos - 1]["key"], 
-                                    "backspace"
-                                ),
-                                "is_correction": 1
-                            }
-                            new_sequence.insert(insert_pos + i, bs_data)
-                        
-                        # Re-add the correct sequence of keys
-                        for i in range(delay):
-                            if error_pos + 1 + i < len(sequence):
-                                orig_key = sequence[error_pos + 1 + i]["key"]
-                                key_data = {
-                                    "key": orig_key,
-                                    "dwell": self.get_dwell_time(orig_key),
-                                    "flight": self.get_flight_time(
-                                        "backspace" if i == 0 else new_sequence[insert_pos + delay + i - 1]["key"],
-                                        orig_key
-                                    )
-                                }
-                                new_sequence.insert(insert_pos + delay + 1 + i, key_data)
-                
+                    # Calculate how many characters were typed *after* the error was inserted
+                    # before the correction starts.
+                    # We need to ensure we don't try to access indices beyond the original sequence length
+                    # when figuring out what was typed during the delay.
+                    effective_delay = 0
+                    original_indices_to_retype = []
+                    for i in range(delay):
+                        original_delayed_index = error_pos + 1 + i
+                        if original_delayed_index < len(sequence):
+                           effective_delay += 1
+                           original_indices_to_retype.append(original_delayed_index)
+                        else:
+                           break # Stop if we reach the end of the original sequence
+
+                    if effective_delay <= 0: continue # No actual delay possible or needed
+
+                    # 2. Calculate where the correction (backspaces) should start
+                    correction_start_index = insert_pos_error + effective_delay
+
+                    # 3. Insert Backspaces
+                    # Need to backspace over the 'effective_delay' characters + the duplicated char
+                    num_backspaces = effective_delay + 1
+                    # Get the key immediately before the first backspace will be inserted
+                    key_before_first_bs = new_sequence[correction_start_index - 1]["key"]
+
+                    for i in range(num_backspaces):
+                        bs_flight_current = self.get_flight_time(
+                            "backspace" if i > 0 else key_before_first_bs, # Flight from prev char or prev BS
+                            "backspace"
+                        )
+                        bs_data = {
+                            "key": "backspace",
+                            "dwell": self.get_dwell_time("backspace"),
+                            "flight": bs_flight_current,
+                            "is_correction": 1
+                        }
+                        # Insert BS at the correction point, pushing subsequent elements rightward
+                        new_sequence.insert(correction_start_index + i, bs_data)
+
+                    # 4. Re-type the original characters that were typed during the delay
+                    retype_start_index = correction_start_index + num_backspaces
+                    last_key_before_retype = "backspace" # First retyped key follows the last backspace
+
+                    for original_index in original_indices_to_retype:
+                        orig_key_data = sequence[original_index]
+                        orig_key = orig_key_data["key"]
+
+                        retype_flight = self.get_flight_time(last_key_before_retype, orig_key)
+                        retype_dwell = self.get_dwell_time(orig_key) # Use profile dwell time
+
+                        key_data = {
+                            "key": orig_key,
+                            "dwell": retype_dwell,
+                            "flight": retype_flight,
+                            "is_correction": 0 # It's part of the intended sequence being retyped
+                        }
+                        # Insert the re-typed key at the current end of the correction block
+                        new_sequence.insert(retype_start_index, key_data)
+                        retype_start_index += 1 # Move insertion point for the next re-typed key
+                        last_key_before_retype = orig_key # Update for next flight time calc
+
+                    # 5. Update flight time for the key immediately following the entire correction block
+                    final_corrected_index = retype_start_index # This is now the index of the next char
+                    if final_corrected_index < len(new_sequence):
+                        next_key_after_correction = new_sequence[final_corrected_index]["key"]
+                        # The last key typed was the last re-typed character
+                        last_typed_key = new_sequence[final_corrected_index - 1]["key"]
+                        new_sequence[final_corrected_index]["flight"] = self.get_flight_time(last_typed_key, next_key_after_correction)
+                    # --- End Refactored Delayed Correction ---
+
             elif error_type == "inserted":
                 # Inserted key error - adding an extra key
                 # Get a typical error key for this character
@@ -365,39 +409,79 @@ class TypingSequenceGenerator:
                     # Update flight time for correct key
                     new_sequence[error_pos + 2]["flight"] = self.get_flight_time("backspace", correct_key)
                 else:
-                    # Delayed correction
+                    # --- Refactored Delayed Correction for inserted ---
                     delay = random.randint(1, 3)
-                    new_sequence.insert(error_pos, typo_data)
-                    
-                    # Add backspaces after the delay
-                    insert_pos = error_pos + 1 + delay
-                    if insert_pos < len(new_sequence):
-                        for i in range(delay + 1):  # +1 to delete the inserted char too
-                            bs_data = {
-                                "key": "backspace",
-                                "dwell": self.get_dwell_time("backspace"),
-                                "flight": self.get_flight_time(
-                                    "backspace" if i > 0 else new_sequence[insert_pos - 1]["key"],
-                                    "backspace"
-                                ),
-                                "is_correction": 1
-                            }
-                            new_sequence.insert(insert_pos + i, bs_data)
-                        
-                        # Re-add the correct sequence
-                        for i in range(delay):
-                            if error_pos + i < len(sequence):
-                                orig_key = sequence[error_pos + i]["key"]
-                                key_data = {
-                                    "key": orig_key,
-                                    "dwell": self.get_dwell_time(orig_key),
-                                    "flight": self.get_flight_time(
-                                        "backspace" if i == 0 else new_sequence[insert_pos + delay + i - 1]["key"],
-                                        orig_key
-                                    )
-                                }
-                                new_sequence.insert(insert_pos + delay + 1 + i, key_data)
-                
+                    insert_pos_error = error_pos # Position where the typo is inserted
+
+                    # 1. Insert the typo character
+                    typo_data = {"key": typo_key, "dwell": typo_dwell, "flight": typo_flight}
+                    new_sequence.insert(insert_pos_error, typo_data)
+
+                    # Calculate effective delay and original indices
+                    effective_delay = 0
+                    original_indices_to_retype = []
+                    # The original characters typed during delay start from the original error_pos
+                    for i in range(delay):
+                        original_delayed_index = error_pos + i
+                        if original_delayed_index < len(sequence):
+                            effective_delay += 1
+                            original_indices_to_retype.append(original_delayed_index)
+                        else:
+                            break
+
+                    if effective_delay <= 0: continue
+
+                    # 2. Calculate where correction (backspaces) starts
+                    # It's after the inserted typo and the delayed characters
+                    correction_start_index = insert_pos_error + 1 + effective_delay # +1 for the inserted typo
+
+                    # 3. Insert Backspaces
+                    # Need to backspace over 'effective_delay' characters + the inserted typo
+                    num_backspaces = effective_delay + 1
+                    key_before_first_bs = new_sequence[correction_start_index - 1]["key"]
+
+                    for i in range(num_backspaces):
+                        bs_flight_current = self.get_flight_time(
+                            "backspace" if i > 0 else key_before_first_bs,
+                            "backspace"
+                        )
+                        bs_data = {
+                            "key": "backspace",
+                            "dwell": self.get_dwell_time("backspace"),
+                            "flight": bs_flight_current,
+                            "is_correction": 1
+                        }
+                        new_sequence.insert(correction_start_index + i, bs_data)
+
+                    # 4. Re-type the original characters typed during the delay
+                    retype_start_index = correction_start_index + num_backspaces
+                    last_key_before_retype = "backspace"
+
+                    for original_index in original_indices_to_retype:
+                        orig_key_data = sequence[original_index]
+                        orig_key = orig_key_data["key"]
+
+                        retype_flight = self.get_flight_time(last_key_before_retype, orig_key)
+                        retype_dwell = self.get_dwell_time(orig_key)
+
+                        key_data = {
+                            "key": orig_key,
+                            "dwell": retype_dwell,
+                            "flight": retype_flight,
+                            "is_correction": 0
+                        }
+                        new_sequence.insert(retype_start_index, key_data)
+                        retype_start_index += 1
+                        last_key_before_retype = orig_key
+
+                    # 5. Update flight time for the key following the correction block
+                    final_corrected_index = retype_start_index
+                    if final_corrected_index < len(new_sequence):
+                        next_key_after_correction = new_sequence[final_corrected_index]["key"]
+                        last_typed_key = new_sequence[final_corrected_index - 1]["key"]
+                        new_sequence[final_corrected_index]["flight"] = self.get_flight_time(last_typed_key, next_key_after_correction)
+                    # --- End Refactored Delayed Correction ---
+
             elif error_type == "missed":
                 # Missed key error - skipping a character, then realizing later
                 if error_pos + 1 < len(new_sequence):
@@ -436,45 +520,110 @@ class TypingSequenceGenerator:
                             next_next_key = new_sequence[error_pos + 5]["key"]
                             new_sequence[error_pos + 5]["flight"] = self.get_flight_time(next_key, next_next_key)
                     else:
-                        # Delayed correction - notice after a few more characters
+                        # --- Refactored Delayed Correction for missed ---
                         delay = random.randint(1, 3)
-                        insert_pos = error_pos + 1 + delay
+                        # The "error" is skipping sequence[error_pos]
+                        # Typing starts immediately with sequence[error_pos + 1]
                         
-                        if insert_pos < len(new_sequence):
-                            # Add backspaces for all typed chars (including the one after missed)
-                            for i in range(delay + 1):
-                                bs_data = {
-                                    "key": "backspace",
-                                    "dwell": self.get_dwell_time("backspace"),
-                                    "flight": self.get_flight_time(
-                                        "backspace" if i > 0 else new_sequence[insert_pos - 1]["key"],
-                                        "backspace"
-                                    ),
-                                    "is_correction": 1
-                                }
-                                new_sequence.insert(insert_pos + i, bs_data)
-                            
-                            # Re-add the correct sequence including missed char
-                            # First add the missed char
-                            missed_data = {
-                                "key": missed_key,
-                                "dwell": self.get_dwell_time(missed_key),
-                                "flight": self.get_flight_time("backspace", missed_key)
+                        # Calculate effective delay and original indices to retype
+                        # The characters typed during the delay start *after* the missed key's position
+                        effective_delay = 0
+                        original_indices_to_retype = [] 
+                        for i in range(delay):
+                             # These are the indices of the characters typed *after* the missed one, during the delay
+                            original_delayed_index = error_pos + 1 + i
+                            if original_delayed_index < len(sequence):
+                                effective_delay += 1
+                                # We need to retype these AND the missed key eventually
+                                original_indices_to_retype.append(original_delayed_index) 
+                            else:
+                                break
+                        
+                        if effective_delay <= 0: continue
+
+                        # 1. Adjust flight time for the key immediately after the (initially) missed key
+                        # This happens *before* the delay and correction are added
+                        if error_pos > 0 and error_pos + 1 < len(new_sequence):
+                             key_before_missed = new_sequence[error_pos - 1]["key"]
+                             key_after_missed = new_sequence[error_pos + 1]["key"] # Key that was typed instead of the missed one
+                             new_sequence[error_pos + 1]["flight"] = self.get_flight_time(key_before_missed, key_after_missed)
+                        
+                        # Remove the original missed key data point from new_sequence TEMPORARILY.
+                        # It simplifies indexing for the correction insertion. We add it back during retyping.
+                        # We know its original index was error_pos.
+                        # Note: Removing elements shifts indices of subsequent elements left by 1.
+                        del new_sequence[error_pos] 
+
+                        # 2. Calculate where correction starts. It's after the delayed characters.
+                        # Since we deleted the missed key at error_pos, the delayed keys now start at error_pos.
+                        correction_start_index = error_pos + effective_delay
+
+                        # 3. Insert Backspaces
+                        # Need to backspace over the 'effective_delay' characters that were typed *after* the missed position.
+                        num_backspaces = effective_delay
+                        if num_backspaces == 0: continue # Should not happen based on effective_delay check, but safe guard
+                        
+                        key_before_first_bs = new_sequence[correction_start_index - 1]["key"]
+
+                        for i in range(num_backspaces):
+                            bs_flight_current = self.get_flight_time(
+                                "backspace" if i > 0 else key_before_first_bs,
+                                "backspace"
+                            )
+                            bs_data = {
+                                "key": "backspace",
+                                "dwell": self.get_dwell_time("backspace"),
+                                "flight": bs_flight_current,
+                                "is_correction": 1
                             }
-                            new_sequence.insert(insert_pos + delay + 1, missed_data)
-                            
-                            # Then add all the chars that were backspaced
-                            for i in range(delay + 1):
-                                if error_pos + i < len(sequence):
-                                    orig_key = sequence[error_pos + i]["key"]
-                                    prev_key = missed_key if i == 0 else new_sequence[insert_pos + delay + 1 + i - 1]["key"]
-                                    key_data = {
-                                        "key": orig_key,
-                                        "dwell": self.get_dwell_time(orig_key),
-                                        "flight": self.get_flight_time(prev_key, orig_key)
-                                    }
-                                    new_sequence.insert(insert_pos + delay + 2 + i, key_data)
-                
+                            new_sequence.insert(correction_start_index + i, bs_data)
+
+                        # 4. Re-add the correct sequence: the missed key + the delayed keys
+                        retype_start_index = correction_start_index + num_backspaces
+                        last_key_before_retype = "backspace"
+
+                        # 4a. Insert the originally missed key first
+                        missed_key_data = sequence[error_pos] # Get original data for missed key
+                        missed_key = missed_key_data["key"]
+                        missed_dwell = self.get_dwell_time(missed_key)
+                        missed_flight = self.get_flight_time(last_key_before_retype, missed_key)
+                        
+                        corrected_missed_data = {
+                            "key": missed_key,
+                            "dwell": missed_dwell,
+                            "flight": missed_flight,
+                            "is_correction": 0 # Part of the corrected sequence
+                        }
+                        new_sequence.insert(retype_start_index, corrected_missed_data)
+                        retype_start_index += 1
+                        last_key_before_retype = missed_key # Update for next flight time
+
+                        # 4b. Insert the original characters typed during the delay
+                        for original_index in original_indices_to_retype:
+                            orig_key_data = sequence[original_index]
+                            orig_key = orig_key_data["key"]
+
+                            retype_flight = self.get_flight_time(last_key_before_retype, orig_key)
+                            retype_dwell = self.get_dwell_time(orig_key)
+
+                            key_data = {
+                                "key": orig_key,
+                                "dwell": retype_dwell,
+                                "flight": retype_flight,
+                                "is_correction": 0
+                            }
+                            new_sequence.insert(retype_start_index, key_data)
+                            retype_start_index += 1
+                            last_key_before_retype = orig_key
+                        
+                        # 5. Update flight time for the key following the correction block
+                        final_corrected_index = retype_start_index
+                        if final_corrected_index < len(new_sequence):
+                            next_key_after_correction = new_sequence[final_corrected_index]["key"]
+                            last_typed_key = new_sequence[final_corrected_index - 1]["key"]
+                            new_sequence[final_corrected_index]["flight"] = self.get_flight_time(last_typed_key, next_key_after_correction)
+                        # --- End Refactored Delayed Correction ---
+
             elif error_type == "reversed":
                 # Reversed keys error - typing two characters in the wrong order
                 if error_pos + 1 < len(new_sequence):
@@ -531,48 +680,120 @@ class TypingSequenceGenerator:
                             next_next_key = new_sequence[error_pos + 6]["key"]
                             new_sequence[error_pos + 6]["flight"] = self.get_flight_time(next_key, next_next_key)
                     else:
-                        # Delay the correction
-                        delay = random.randint(1, 2)  # Smaller delay for reversal errors
+                        # --- Refactored Delayed Correction for reversed ---
+                        delay = random.randint(1, 2) # Smaller delay for reversal errors
                         
-                        # Replace the original keys with the swapped version
+                        # The error involves replacing sequence[error_pos] and sequence[error_pos+1]
+                        # with the swapped versions.
+                        if error_pos + 1 >= len(sequence): continue # Need two keys to reverse
+
+                        curr_key_orig_data = sequence[error_pos]
+                        next_key_orig_data = sequence[error_pos + 1]
+                        curr_key = curr_key_orig_data["key"]
+                        next_key = next_key_orig_data["key"]
+
+                        # 1. Apply the reversed typing error to new_sequence
+                        # Calculate timings for the swapped keys
+                        key_before_swap = new_sequence[error_pos - 1]["key"]
+                        swap1_dwell = self.get_dwell_time(next_key) # Dwell of the key typed first (next_key)
+                        swap1_flight = self.get_flight_time(key_before_swap, next_key)
+                        swap2_dwell = self.get_dwell_time(curr_key) # Dwell of the key typed second (curr_key)
+                        swap2_flight = self.get_flight_time(next_key, curr_key)
+
+                        swap1_data = {"key": next_key, "dwell": swap1_dwell, "flight": swap1_flight, "is_correction": 0}
+                        swap2_data = {"key": curr_key, "dwell": swap2_dwell, "flight": swap2_flight, "is_correction": 0}
+
+                        # Replace the original two keys with the swapped pair
                         new_sequence[error_pos] = swap1_data
-                        new_sequence.insert(error_pos + 1, swap2_data)
+                        new_sequence[error_pos + 1] = swap2_data
+
+                        # Recalculate flight time for the key *after* the swapped pair, if it exists
+                        if error_pos + 2 < len(new_sequence):
+                            key_after_swap = new_sequence[error_pos + 2]["key"]
+                            new_sequence[error_pos + 2]["flight"] = self.get_flight_time(curr_key, key_after_swap)
+
+
+                        # Calculate effective delay and indices for characters typed *after* the swap
+                        effective_delay = 0
+                        original_indices_to_retype = []
+                        for i in range(delay):
+                            # Indices relative to the original sequence, after the reversed pair
+                            original_delayed_index = error_pos + 2 + i 
+                            if original_delayed_index < len(sequence):
+                                effective_delay += 1
+                                original_indices_to_retype.append(original_delayed_index)
+                            else:
+                                break
                         
-                        # Calculate position to insert correction
-                        insert_pos = error_pos + 2 + delay
+                        # If delay is 0, we still need to correct the swap itself
                         
-                        if insert_pos < len(new_sequence):
-                            # Add backspaces for everything from the error until correction point
-                            for i in range(delay + 2):
-                                bs_data = {
-                                    "key": "backspace",
-                                    "dwell": self.get_dwell_time("backspace"),
-                                    "flight": self.get_flight_time(
-                                        "backspace" if i > 0 else new_sequence[insert_pos - 1]["key"],
-                                        "backspace"
-                                    ),
-                                    "is_correction": 1
-                                }
-                                new_sequence.insert(insert_pos + i, bs_data)
-                            
-                            # Re-add the correct sequence
-                            # First the originally swapped pair in correct order
-                            corr1_data["flight"] = self.get_flight_time("backspace", curr_key)
-                            new_sequence.insert(insert_pos + delay + 2, corr1_data)
-                            new_sequence.insert(insert_pos + delay + 3, corr2_data)
-                            
-                            # Then any additional characters that were backspaced
-                            for i in range(delay):
-                                if error_pos + 2 + i < len(sequence):
-                                    orig_key = sequence[error_pos + 2 + i]["key"]
-                                    prev_key = next_key if i == 0 else new_sequence[insert_pos + delay + 4 + i - 1]["key"]
-                                    key_data = {
-                                        "key": orig_key,
-                                        "dwell": self.get_dwell_time(orig_key),
-                                        "flight": self.get_flight_time(prev_key, orig_key)
-                                    }
-                                    new_sequence.insert(insert_pos + delay + 4 + i, key_data)
-        
+                        # 2. Calculate where correction starts
+                        # It's after the swapped pair and the delayed characters
+                        correction_start_index = error_pos + 2 + effective_delay
+
+                        # 3. Insert Backspaces
+                        # Need to backspace over 'effective_delay' characters + the swapped pair (2 chars)
+                        num_backspaces = effective_delay + 2
+                        key_before_first_bs = new_sequence[correction_start_index - 1]["key"]
+
+                        for i in range(num_backspaces):
+                            bs_flight_current = self.get_flight_time(
+                                "backspace" if i > 0 else key_before_first_bs,
+                                "backspace"
+                            )
+                            bs_data = {
+                                "key": "backspace",
+                                "dwell": self.get_dwell_time("backspace"),
+                                "flight": bs_flight_current,
+                                "is_correction": 1
+                            }
+                            new_sequence.insert(correction_start_index + i, bs_data)
+
+                        # 4. Re-type the correct sequence
+                        retype_start_index = correction_start_index + num_backspaces
+                        last_key_before_retype = "backspace"
+
+                        # 4a. Re-type the original pair in the correct order
+                        # Use timings from the original sequence data
+                        corr1_dwell = self.get_dwell_time(curr_key) # Use profile dwell
+                        corr1_flight = self.get_flight_time(last_key_before_retype, curr_key)
+                        corr2_dwell = self.get_dwell_time(next_key)
+                        corr2_flight = self.get_flight_time(curr_key, next_key)
+
+                        corr1_data = {"key": curr_key, "dwell": corr1_dwell, "flight": corr1_flight, "is_correction": 0}
+                        corr2_data = {"key": next_key, "dwell": corr2_dwell, "flight": corr2_flight, "is_correction": 0}
+
+                        new_sequence.insert(retype_start_index, corr1_data)
+                        new_sequence.insert(retype_start_index + 1, corr2_data)
+                        retype_start_index += 2
+                        last_key_before_retype = next_key # Last key of the corrected pair
+
+                        # 4b. Re-type the original characters typed during the delay
+                        for original_index in original_indices_to_retype:
+                            orig_key_data = sequence[original_index]
+                            orig_key = orig_key_data["key"]
+
+                            retype_flight = self.get_flight_time(last_key_before_retype, orig_key)
+                            retype_dwell = self.get_dwell_time(orig_key)
+
+                            key_data = {
+                                "key": orig_key,
+                                "dwell": retype_dwell,
+                                "flight": retype_flight,
+                                "is_correction": 0
+                            }
+                            new_sequence.insert(retype_start_index, key_data)
+                            retype_start_index += 1
+                            last_key_before_retype = orig_key
+
+                        # 5. Update flight time for the key following the correction block
+                        final_corrected_index = retype_start_index
+                        if final_corrected_index < len(new_sequence):
+                            next_key_after_correction = new_sequence[final_corrected_index]["key"]
+                            last_typed_key = new_sequence[final_corrected_index - 1]["key"]
+                            new_sequence[final_corrected_index]["flight"] = self.get_flight_time(last_typed_key, next_key_after_correction)
+                        # --- End Refactored Delayed Correction ---
+
         return new_sequence
     
     def generate_sequence(self, text, add_pauses=True, add_corrections=True):

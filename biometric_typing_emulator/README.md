@@ -1,4 +1,4 @@
-# Biometric Typing Emulator
+ # Biometric Typing Emulator
 
 A full-stack software suite for recording, analyzing, and replaying human typing behavior with precise biometrics using AutoHotkey for realistic keystroke injection.
 
