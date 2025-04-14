@@ -3,6 +3,8 @@ import os
 import random
 import numpy as np
 import time
+import re # Add import for regex
+import sys # Ensure sys is imported for stderr
 
 class TypingSequenceGenerator:
     def __init__(self, user_id):
@@ -895,6 +897,69 @@ class TypingSequenceGenerator:
         
         return output_path
 
+# --- Integrated Cleanup Function --- #
+def cleanup_sequence_file(file_path):
+    """
+    Cleans the generated typing sequence file by:
+    1. Removing empty lines.
+    2. Replacing lines with missing keys (starting with '|') with '{Tab}'.
+    """
+    if not os.path.exists(file_path):
+        print(f"Error: File not found at {file_path}", file=sys.stderr)
+        return False
+
+    processed_lines = []
+    try:
+        # Read with utf-8-sig to handle potential BOM
+        with open(file_path, 'r', encoding='utf-8-sig') as f:
+            lines = f.readlines()
+
+        header_skipped = False
+        changes_made = False
+        for line_num, line in enumerate(lines, 1):
+            stripped_line = line.strip()
+
+            # Keep the header line
+            if not header_skipped and stripped_line.lower() == "key|dwell|flight":
+                 processed_lines.append(stripped_line + '\n')
+                 header_skipped = True
+                 continue
+
+            # Skip completely empty lines (after stripping)
+            if not stripped_line:
+                print(f"Info: Removing empty line #{line_num}.")
+                changes_made = True
+                continue
+
+            # Check if line starts with '|', indicating missing key
+            # Use regex to ensure it matches the pattern |number|number
+            if re.match(r'^\|\s*\d+\s*\|\s*\d+\s*$', stripped_line):
+                # Prepend {Tab}
+                corrected_line = "{Tab}" + stripped_line
+                processed_lines.append(corrected_line + '\n')
+                print(f"Info: Line #{line_num}: Corrected missing key line to start with {{Tab}}")
+                changes_made = True
+            else:
+                # Keep valid lines as they are (ensure newline consistency)
+                # Only append if it's not just whitespace
+                if stripped_line:
+                    processed_lines.append(stripped_line + '\n')
+
+        # Only write back if changes were made
+        if changes_made:
+            print(f"Info: Writing cleaned sequence back to {file_path}")
+            # Write back with standard utf-8
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.writelines(processed_lines)
+        else:
+            print(f"Info: No cleanup needed for {file_path}")
+
+        return True
+
+    except Exception as e:
+        print(f"Error during cleanup: {e}", file=sys.stderr)
+        return False
+# --- End Integrated Cleanup Function --- #
 
 def main():
     """Command line interface for the generator"""
@@ -919,6 +984,12 @@ def main():
         )
         output_path = generator.save_sequence(sequence, args.output)
         print(f"Typing sequence saved to {output_path}")
+
+        # --- Call cleanup automatically --- #
+        print(f"--- Running cleanup on {output_path} ---")
+        cleanup_sequence_file(output_path)
+        print(f"--- Cleanup finished --- ")
+
     except Exception as e:
         print(f"Error: {e}")
 
