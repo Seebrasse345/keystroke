@@ -898,6 +898,7 @@ class TypingSequenceGenerator:
 
 def main():
     """Command line interface for the generator"""
+    print("--- Generator Script Started ---")
     import argparse
     
     parser = argparse.ArgumentParser(description="Generate realistic typing sequences")
