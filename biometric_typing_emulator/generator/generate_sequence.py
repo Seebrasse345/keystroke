@@ -832,10 +832,11 @@ class TypingSequenceGenerator:
             if prev_key_str is not None: # Check if there WAS a previous key
                 flight_time = self.get_flight_time(prev_key_str, key_str) # Use PREVIOUS mapped key
 
-            # --- Safeguard against empty key --- #
-            if not key_str:
-                 print(f"Warning: Skipping empty key generated from char code {ord(char) if isinstance(char, str) and len(char)==1 else 'N/A'} at index {i}")
-                 # We also need to ensure prev_key_str doesn't get updated with an empty string
+            # --- Enhanced Safeguard against empty or unhandled whitespace key --- #
+            is_handled_whitespace = key_str in [' ', "space", "tab", "enter"]
+            if not key_str or (key_str.isspace() and not is_handled_whitespace):
+                 print(f"Warning: Skipping empty or unhandled whitespace key generated from char code {ord(char) if isinstance(char, str) and len(char)==1 else 'N/A'} (key_str='{repr(key_str)}') at index {i}")
+                 # We also need to ensure prev_key_str doesn't get updated with an empty/bad string
                  continue # Skip this entry entirely
 
             char_data = {
@@ -885,6 +886,10 @@ class TypingSequenceGenerator:
                 # (e.g., +, ^, !, #, {, }) - Add more if needed
                 elif key in ['+', '^', '!', '#', '{', '}']:
                      key = "{" + key + "}"
+
+                # --- DEBUG: Print key before writing --- #
+                print(f"DEBUG save_sequence: Writing key='{repr(key)}', dwell={int(data['dwell'])}, flight={int(data['flight'])}")
+                # --- END DEBUG --- #
 
                 f.write(f"{key}|{int(data['dwell'])}|{int(data['flight'])}\n")
         
