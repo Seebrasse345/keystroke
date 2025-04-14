@@ -803,12 +803,15 @@ class TypingSequenceGenerator:
     def generate_sequence(self, text, add_pauses=True, add_corrections=True):
         """Generate a typing sequence for the provided text"""
         sequence = []
-        
-        for i, char in enumerate(text):
-            # Get dwell time for this character
-            dwell_time = self.get_dwell_time(char)
+        prev_key_str = None # Keep track of the previous mapped key
 
+        for i, char in enumerate(text):
             # --- Map special whitespace characters to profile keys --- #
+            
+            # --- Skip Carriage Return --- #
+            if char == '\r':
+                continue # Skip carriage return characters entirely
+                
             key_str = char # Default to the character itself
             if char == '\t':
                 key_str = "tab"
@@ -822,13 +825,19 @@ class TypingSequenceGenerator:
                 # else: keep key_str = ' ' - allows profiles without explicit "space" recording
             # --- End Mapping ---
 
-            # Get flight time from previous character
+            dwell_time = self.get_dwell_time(key_str)
+
             flight_time = 0
-            if i > 0:
-                prev_char = text[i-1]
-                flight_time = self.get_flight_time(prev_char, char)
-            
-            # Add to sequence
+            # --- Use previous MAPPED key for flight time --- #
+            if prev_key_str is not None: # Check if there WAS a previous key
+                flight_time = self.get_flight_time(prev_key_str, key_str) # Use PREVIOUS mapped key
+
+            # --- Safeguard against empty key --- #
+            if not key_str:
+                 print(f"Warning: Skipping empty key generated from char code {ord(char) if isinstance(char, str) and len(char)==1 else 'N/A'} at index {i}")
+                 # We also need to ensure prev_key_str doesn't get updated with an empty string
+                 continue # Skip this entry entirely
+
             char_data = {
                 "key": key_str, # Use the mapped key string
                 "dwell": dwell_time,
@@ -836,7 +845,8 @@ class TypingSequenceGenerator:
                 "is_correction": 0
             }
             sequence.append(char_data)
-        
+            prev_key_str = key_str # Update previous key tracker for the next iteration
+
         # No longer needed, pauses are inherent in flight times
         #if add_pauses:
         #    sequence = self.add_realistic_pauses(sequence)
