@@ -1,0 +1,5846 @@
+[
+  {
+    "key": "i",
+    "dwell_time": 104.9241,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 123.9923,
+    "flight_time": 20.8099,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 103.9918,
+    "flight_time": 84.1432,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 83.99849999999999,
+    "flight_time": 121.02189999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 84.03529999999999,
+    "flight_time": 25.8918,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 103.99929999999999,
+    "flight_time": 46.1104,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 64.0058,
+    "flight_time": 123.0396,
+    "is_correction": 0
+  },
+  {
+    "key": "k",
+    "dwell_time": 106.9635,
+    "flight_time": 124.99289999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 69.9892,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 86.0268,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 104.09909999999999,
+    "flight_time": 245.1335,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 84.03,
+    "flight_time": 188.96079999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 86.9973,
+    "flight_time": 18.932299999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 66.9971,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 104.03049999999999,
+    "flight_time": 82.09009999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 107.01599999999999,
+    "flight_time": 84.9688,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 106.9481,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 86.9349,
+    "flight_time": 296.04679999999996,
+    "is_correction": 1
+  },
+  {
+    "key": "a",
+    "dwell_time": 126.9524,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 62.9858,
+    "flight_time": 6.928,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 44.003,
+    "flight_time": 3.8891,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 63.939,
+    "flight_time": 650.3140999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 83.9996,
+    "flight_time": 25.9762,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 84.04129999999999,
+    "flight_time": 103.99849999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 126.98769999999999,
+    "flight_time": 62.9741,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 127.0015,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 104.0154,
+    "flight_time": 23.0961,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 83.9742,
+    "flight_time": 25.999,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 104.0176,
+    "flight_time": 84.0238,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 144.9804,
+    "flight_time": 63.0214,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 105.0133,
+    "flight_time": 80.9331,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 105.0093,
+    "flight_time": 83.10549999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 63.993399999999994,
+    "flight_time": 25.993399999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 63.0111,
+    "flight_time": 104.01939999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 125.0333,
+    "flight_time": 62.979699999999994,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 83.00529999999999,
+    "flight_time": 20.9241,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 83.97659999999999,
+    "flight_time": 245.13109999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 104.97959999999999,
+    "flight_time": 88.0296,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 125.0303,
+    "flight_time": 18.0093,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 123.9388,
+    "flight_time": 631.1863,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 125.0041,
+    "flight_time": 38.9899,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.2147,
+    "flight_time": 6.8549,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 105.0119,
+    "flight_time": 163.9756,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 146.9968,
+    "flight_time": 20.929399999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 109.97,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 86.98649999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 104.0577,
+    "flight_time": 63.139399999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 106.994,
+    "flight_time": 44.0029,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 149.96099999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 129.9795,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.0364,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 83.9838,
+    "flight_time": 145.1688,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 62.988899999999994,
+    "flight_time": 25.9708,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 103.027,
+    "flight_time": 105.0149,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 148.0073,
+    "flight_time": 83.0089,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 127.00089999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 125.0128,
+    "flight_time": 43.098099999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 85.0153,
+    "flight_time": 25.0006,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 84.0051,
+    "flight_time": 102.98819999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 145.039,
+    "flight_time": 144.0219,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 124.0225,
+    "flight_time": 20.8812,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 125.0359,
+    "flight_time": 23.0411,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 84.0376,
+    "flight_time": 45.9957,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 103.1267,
+    "flight_time": 84.0223,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 103.95519999999999,
+    "flight_time": 124.0346,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.0132,
+    "flight_time": 41.8084,
+    "is_correction": 0
+  },
+  {
+    "key": "w",
+    "dwell_time": 144.9916,
+    "flight_time": 930.2727,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 123.9871,
+    "flight_time": 210.99679999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 123.97659999999999,
+    "flight_time": 20.0061,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 86.03439999999999,
+    "flight_time": 24.9762,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 69.976,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 148.029,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 107.05879999999999,
+    "flight_time": 3.9354999999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 151.039,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 130.09189999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 66.99249999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 104.01989999999999,
+    "flight_time": 46.126999999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 62.976099999999995,
+    "flight_time": 103.9883,
+    "is_correction": 0
+  },
+  {
+    "key": "k",
+    "dwell_time": 87.0213,
+    "flight_time": 124.0368,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 86.9921,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 84.02279999999999,
+    "flight_time": 4.884799999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 87.9965,
+    "flight_time": 63.089499999999994,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 66.971,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 63.0087,
+    "flight_time": 104.0372,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 125.0093,
+    "flight_time": 265.0398,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 63.0233,
+    "flight_time": 20.873099999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 104.9915,
+    "flight_time": 23.0958,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 64.0042,
+    "flight_time": 5.0171,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 104.009,
+    "flight_time": 83.9948,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 107.02289999999999,
+    "flight_time": 63.0013,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 110.00819999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 148.05079999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 103.0294,
+    "flight_time": 5.983899999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 64.0157,
+    "flight_time": 83.99719999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 125.98219999999999,
+    "flight_time": 43.010799999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 66.0351,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 103.9944,
+    "flight_time": 63.1376,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 64.1113,
+    "flight_time": 5.9859,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 62.997,
+    "flight_time": 39.881699999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 83.0105,
+    "flight_time": 105.0428,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 124.0158,
+    "flight_time": 19.9885,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 63.005599999999994,
+    "flight_time": 7.9049,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 106.91539999999999,
+    "flight_time": 265.1952,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 106.9801,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 107.0214,
+    "flight_time": 4.9817,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 46.995799999999996,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 84.0606,
+    "flight_time": 83.1362,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 87.0078,
+    "flight_time": 2.9322,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 109.9507,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 89.0356,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 86.9909,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 83.01469999999999,
+    "flight_time": 145.1358,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 85.0232,
+    "flight_time": 5.9889,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 84.0155,
+    "flight_time": 82.98949999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 106.9671,
+    "flight_time": 61.9991,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 127.0051,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 124.073,
+    "flight_time": 23.0805,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 63.974399999999996,
+    "flight_time": 5.9540999999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 105.00829999999999,
+    "flight_time": 103.0375,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 145.0167,
+    "flight_time": 42.0164,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 127.00659999999999,
+    "flight_time": 20.884999999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 126.98389999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 83.99629999999999,
+    "flight_time": 6.0108999999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 84.03309999999999,
+    "flight_time": 103.9901,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 124.0402,
+    "flight_time": 41.9972,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.9945,
+    "flight_time": 20.898999999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 124.9979,
+    "flight_time": 650.2807,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 85.9348,
+    "flight_time": 19.945999999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.9823,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 86.8939,
+    "flight_time": 993.3376999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 106.9708,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 104.9966,
+    "flight_time": 28.0082,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 83.99029999999999,
+    "flight_time": 83.99759999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 145.1158,
+    "flight_time": 65.0052,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 103.981,
+    "flight_time": 58.967,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 83.0176,
+    "flight_time": 85.8843,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 104.0287,
+    "flight_time": 309.155,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 124.0324,
+    "flight_time": 42.935199999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 83.9371,
+    "flight_time": 106.097,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 84.0222,
+    "flight_time": 102.9921,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 87.0124,
+    "flight_time": 17.9835,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 130.0365,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 46.0026,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 124.0513,
+    "flight_time": 65.0911,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 144.0067,
+    "flight_time": 38.0211,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 63.784099999999995,
+    "flight_time": 298.1029,
+    "is_correction": 1
+  },
+  {
+    "key": "a",
+    "dwell_time": 124.0304,
+    "flight_time": 416.19239999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 106.773,
+    "flight_time": 50.157399999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 88.9266,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.01039999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "\"",
+    "dwell_time": 144.9406,
+    "flight_time": 588.2067999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "shift",
+    "dwell_time": 495.03709999999995,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 106.9309,
+    "flight_time": 253.18519999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 106.967,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 107.03269999999999,
+    "flight_time": 50.021899999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "\"",
+    "dwell_time": 123.9631,
+    "flight_time": 246.0707,
+    "is_correction": 0
+  },
+  {
+    "key": "shift",
+    "dwell_time": 314.99989999999997,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 125.0184,
+    "flight_time": 89.0212,
+    "is_correction": 0
+  },
+  {
+    "key": "f",
+    "dwell_time": 83.935,
+    "flight_time": 729.2715999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 85.9542,
+    "flight_time": 104.9849,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 106.98949999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 127.0149,
+    "flight_time": 22.002,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 129.99869999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 107.0196,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 82.9884,
+    "flight_time": 45.994299999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 64.0308,
+    "flight_time": 165.99439999999998,
+    "is_correction": 0
+  },
+  {
+    "key": ".",
+    "dwell_time": 63.990399999999994,
+    "flight_time": 247.0273,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 83.9482,
+    "flight_time": 204.07479999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 3207.2785999999996,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 109.9885,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 151.012,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 127.0026,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "f",
+    "dwell_time": 126.99279999999999,
+    "flight_time": 105.0182,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 130.0198,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 130.00969999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 127.0247,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "shift",
+    "dwell_time": 266.0084,
+    "flight_time": 80.9037,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 165.0144,
+    "flight_time": 89.0259,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 105.92609999999999,
+    "flight_time": 874.3145,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 107.00189999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 188.9907,
+    "flight_time": 23.9763,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 171.01239999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 128.9906,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 151.0057,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 107.0132,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 83.0107,
+    "flight_time": 194.92239999999998,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 83.99589999999999,
+    "flight_time": 84.0038,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 82.9928,
+    "flight_time": 84.0184,
+    "is_correction": 1
+  },
+  {
+    "key": "u",
+    "dwell_time": 65.9236,
+    "flight_time": 180.1837,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 131.0285,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 171.01389999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 87.0003,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 104.0166,
+    "flight_time": 18.0945,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 107.01429999999999,
+    "flight_time": 50.0034,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.0183,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 103.01769999999999,
+    "flight_time": 283.11789999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 64.01559999999999,
+    "flight_time": 175.89059999999998,
+    "is_correction": 1
+  },
+  {
+    "key": "s",
+    "dwell_time": 125.00779999999999,
+    "flight_time": 32.1359,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 107.0152,
+    "flight_time": 47.9295,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 107.04469999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "k",
+    "dwell_time": 105.9905,
+    "flight_time": 68.0046,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 110.98299999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.0015,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 104.0379,
+    "flight_time": 165.14079999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 84.00059999999999,
+    "flight_time": 78.9816,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 62.9886,
+    "flight_time": 51.0059,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 86.0033,
+    "flight_time": 105.03089999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 88.0227,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 128.0144,
+    "flight_time": 5.902699999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 87.9998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 145.0776,
+    "flight_time": 48.998599999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 127.0042,
+    "flight_time": 62.977199999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 107.1096,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 104.0403,
+    "flight_time": 4.8713999999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 146.11499999999998,
+    "flight_time": 26.1675,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 127.43419999999999,
+    "flight_time": 0.25379999999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 87.0222,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 107.0116,
+    "flight_time": 103.0084,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.0085,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 84.05449999999999,
+    "flight_time": 19.0627,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 87.0201,
+    "flight_time": 49.0197,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 88.9917,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.0022,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 127.0128,
+    "flight_time": 106.1212,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 110.9661,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 86.98689999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "j",
+    "dwell_time": 124.0396,
+    "flight_time": 45.105799999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 148.0146,
+    "flight_time": 43.0128,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 107.026,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 128.0186,
+    "flight_time": 45.9908,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.0097,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 84.0054,
+    "flight_time": 20.098599999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 105.03519999999999,
+    "flight_time": 28.9894,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 83.703,
+    "flight_time": 17.301199999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 123.98939999999999,
+    "flight_time": 103.003,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.02159999999999,
+    "flight_time": 87.9288,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 103.01599999999999,
+    "flight_time": 45.0834,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 86.9913,
+    "flight_time": 86.0153,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 89.0088,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 127.02329999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "w",
+    "dwell_time": 104.00659999999999,
+    "flight_time": 161.1109,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 106.95089999999999,
+    "flight_time": 293.0857,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 127.0681,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "k",
+    "dwell_time": 83.9821,
+    "flight_time": 46.9309,
+    "is_correction": 0
+  },
+  {
+    "key": ".",
+    "dwell_time": 83.9404,
+    "flight_time": 187.09099999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.9726,
+    "flight_time": 58.906299999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 128.01319999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 83.9452,
+    "flight_time": 473.2333,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 124.0196,
+    "flight_time": 138.8692,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 103.8744,
+    "flight_time": 193.2313,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 102.994,
+    "flight_time": 41.922599999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 103.9541,
+    "flight_time": 364.2596,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 85.9667,
+    "flight_time": 108.9815,
+    "is_correction": 0
+  },
+  {
+    "key": "f",
+    "dwell_time": 65.95309999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "f",
+    "dwell_time": 84.01389999999999,
+    "flight_time": 84.0364,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 106.9844,
+    "flight_time": 61.994499999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 86.9957,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 105.0458,
+    "flight_time": 5.9836,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 86.98519999999999,
+    "flight_time": 42.0019,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 110.00319999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 86.9999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 84.03349999999999,
+    "flight_time": 187.1319,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 66.97829999999999,
+    "flight_time": 188.90259999999998,
+    "is_correction": 1
+  },
+  {
+    "key": "f",
+    "dwell_time": 66.9712,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 66.9922,
+    "flight_time": 104.0071,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 106.9996,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 125.99199999999999,
+    "flight_time": 43.0256,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.98989999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 128.00029999999998,
+    "flight_time": 60.1046,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 188.0262,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 83.98939999999999,
+    "flight_time": 21.9936,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 84.0064,
+    "flight_time": 65.0251,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 103.06259999999999,
+    "flight_time": 165.9825,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 62.9843,
+    "flight_time": 26.9775,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 86.9951,
+    "flight_time": 146.0717,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 86.9262,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.00189999999999,
+    "flight_time": 5.9754,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 104.00309999999999,
+    "flight_time": 101.1288,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 84.00609999999999,
+    "flight_time": 127.03059999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 103.99669999999999,
+    "flight_time": 181.0133,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 124.0428,
+    "flight_time": 68.9772,
+    "is_correction": 0
+  },
+  {
+    "key": "f",
+    "dwell_time": 83.97529999999999,
+    "flight_time": 41.006499999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 22.988999999999997,
+    "flight_time": 147.0318,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 62.9779,
+    "flight_time": 251.9621,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 104.00649999999999,
+    "flight_time": 104.0201,
+    "is_correction": 1
+  },
+  {
+    "key": "f",
+    "dwell_time": 83.9944,
+    "flight_time": 15.129,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 63.029399999999995,
+    "flight_time": 152.9037,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 85.9986,
+    "flight_time": 104.9512,
+    "is_correction": 1
+  },
+  {
+    "key": "f",
+    "dwell_time": 87.00659999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 105.0196,
+    "flight_time": 105.9695,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 126.94189999999999,
+    "flight_time": 468.0988,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 86.97269999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 107.99199999999999,
+    "flight_time": 125.0021,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 86.9957,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 83.1313,
+    "flight_time": 105.0161,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 84.1592,
+    "flight_time": 41.8653,
+    "is_correction": 0
+  },
+  {
+    "key": "?",
+    "dwell_time": 63.8874,
+    "flight_time": 190.9975,
+    "is_correction": 0
+  },
+  {
+    "key": "shift",
+    "dwell_time": 271.0417,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 83.9938,
+    "flight_time": 29.0017,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 102.91409999999999,
+    "flight_time": 570.3054999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 124.0623,
+    "flight_time": 140.00459999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "v",
+    "dwell_time": 147.8653,
+    "flight_time": 88.06259999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 87.9416,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 125.0422,
+    "flight_time": 4.8865,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 85.98049999999999,
+    "flight_time": 27.086199999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 127.0548,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 64.0088,
+    "flight_time": 27.0003,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 84.0226,
+    "flight_time": 19.9937,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 107.0146,
+    "flight_time": 46.972,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 65.9705,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 86.9878,
+    "flight_time": 89.03059999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 87.0376,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 84.0119,
+    "flight_time": 26.900299999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "w",
+    "dwell_time": 108.0162,
+    "flight_time": 79.0837,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 110.0067,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 106.82379999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 84.0414,
+    "flight_time": 23.976599999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 63.699799999999996,
+    "flight_time": 0.1881,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 88.0064,
+    "flight_time": 103.09729999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 87.00189999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 66.95479999999999,
+    "flight_time": 163.0866,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 109.9463,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 87.0308,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 84.00189999999999,
+    "flight_time": 87.071,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 103.97439999999999,
+    "flight_time": 259.1456,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 103.99849999999999,
+    "flight_time": 47.9732,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 84.03739999999999,
+    "flight_time": 43.9798,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 84.0299,
+    "flight_time": 16.9493,
+    "is_correction": 0
+  },
+  {
+    "key": "?",
+    "dwell_time": 83.9485,
+    "flight_time": 156.08599999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "shift",
+    "dwell_time": 333.041,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 125.0222,
+    "flight_time": 48.973499999999994,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 123.9735,
+    "flight_time": 62.1515,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 64.0484,
+    "flight_time": 106.94109999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 89.9881,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 144.04919999999998,
+    "flight_time": 44.997299999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 83.9857,
+    "flight_time": 212.9218,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 87.00229999999999,
+    "flight_time": 102.98979999999999,
+    "is_correction": 1
+  },
+  {
+    "key": "y",
+    "dwell_time": 108.9797,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.0321,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 82.9928,
+    "flight_time": 366.1534,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 23.0221,
+    "flight_time": 91.9724,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 68.9588,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 43.958,
+    "flight_time": 58.0511,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 62.998099999999994,
+    "flight_time": 213.9564,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 124.01259999999999,
+    "flight_time": 84.0035,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 105.0154,
+    "flight_time": 246.0229,
+    "is_correction": 1
+  },
+  {
+    "key": "o",
+    "dwell_time": 127.97699999999999,
+    "flight_time": 342.1701,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 107.06089999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "k",
+    "dwell_time": 83.9957,
+    "flight_time": 26.9591,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.0235,
+    "flight_time": 20.865299999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 103.99239999999999,
+    "flight_time": 18.1012,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 108.00699999999999,
+    "flight_time": 9.0007,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 89.9571,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 87.0312,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 104.02369999999999,
+    "flight_time": 104.1002,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 167.0253,
+    "flight_time": 58.984199999999994,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 66.9457,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 87.0296,
+    "flight_time": 84.03659999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.0029,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 86.9718,
+    "flight_time": 108.1195,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 127.0,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 84.00529999999999,
+    "flight_time": 229.0305,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 84.0269,
+    "flight_time": 56.013999999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 83.0078,
+    "flight_time": 335.09319999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 103.93209999999999,
+    "flight_time": 367.09889999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 105.0028,
+    "flight_time": 97.99029999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 83.9952,
+    "flight_time": 46.9869,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 84.00869999999999,
+    "flight_time": 165.00209999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 103.97879999999999,
+    "flight_time": 259.0569,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 83.99199999999999,
+    "flight_time": 276.945,
+    "is_correction": 1
+  },
+  {
+    "key": "i",
+    "dwell_time": 104.0056,
+    "flight_time": 140.1243,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 126.98859999999999,
+    "flight_time": 41.9784,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 107.0063,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 104.0302,
+    "flight_time": 6.986599999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 87.03059999999999,
+    "flight_time": 26.981199999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 87.0115,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 84.9887,
+    "flight_time": 3.8989,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 83.9487,
+    "flight_time": 1053.327,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 106.9922,
+    "flight_time": 23.9656,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 87.0389,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 64.00699999999999,
+    "flight_time": 4.848599999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 63.0653,
+    "flight_time": 87.10629999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 42.9732,
+    "flight_time": 141.9645,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 112.9683,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 127.04889999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 86.0133,
+    "flight_time": 63.1089,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 129.9754,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 86.0435,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 84.01939999999999,
+    "flight_time": 59.964299999999994,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.0009,
+    "flight_time": 86.9118,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 106.8968,
+    "flight_time": 221.2497,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 66.9494,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 84.97699999999999,
+    "flight_time": 123.0376,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 84.00139999999999,
+    "flight_time": 182.0385,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 106.972,
+    "flight_time": 61.9987,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 86.98519999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 63.020999999999994,
+    "flight_time": 126.04209999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 107.01259999999999,
+    "flight_time": 101.98649999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 127.0076,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "f",
+    "dwell_time": 103.9694,
+    "flight_time": 466.24039999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 107.0136,
+    "flight_time": 27.953699999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 86.9444,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 64.0176,
+    "flight_time": 24.858999999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 85.99549999999999,
+    "flight_time": 104.0919,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 107.9991,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 106.7824,
+    "flight_time": 142.2261,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 66.987,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 83.9841,
+    "flight_time": 3.9071,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 63.0143,
+    "flight_time": 103.1218,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 104.0112,
+    "flight_time": 7.9895,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 84.0042,
+    "flight_time": 37.9833,
+    "is_correction": 0
+  },
+  {
+    "key": "k",
+    "dwell_time": 107.033,
+    "flight_time": 27.0029,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 87.01039999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 104.03949999999999,
+    "flight_time": 139.09459999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 127.9857,
+    "flight_time": 149.9957,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 88.9936,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 87.1862,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 84.0192,
+    "flight_time": 103.9234,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 105.0101,
+    "flight_time": 139.0044,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 103.9981,
+    "flight_time": 131.0139,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 127.0204,
+    "flight_time": 64.0078,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 108.04759999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 83.99799999999999,
+    "flight_time": 148.1378,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 63.9715,
+    "flight_time": 16.952099999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 84.03139999999999,
+    "flight_time": 68.01299999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 104.0277,
+    "flight_time": 19.970399999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 123.02449999999999,
+    "flight_time": 47.0028,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 84.01509999999999,
+    "flight_time": 37.9859,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 83.0085,
+    "flight_time": 170.0221,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 85.9463,
+    "flight_time": 37.990899999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 127.0637,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "w",
+    "dwell_time": 125.01599999999999,
+    "flight_time": 60.119,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 103.97579999999999,
+    "flight_time": 366.05879999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 83.0069,
+    "flight_time": 3.9475,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 84.0065,
+    "flight_time": 125.0101,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 84.0714,
+    "flight_time": 83.94579999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 104.03569999999999,
+    "flight_time": 27.9894,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 63.7632,
+    "flight_time": 187.2533,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 64.0604,
+    "flight_time": 104.00489999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 105.0009,
+    "flight_time": 301.8818,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 123.9499,
+    "flight_time": 568.2352,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 107.00659999999999,
+    "flight_time": 145.99269999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 129.9571,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 126.99839999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 148.0041,
+    "flight_time": 162.02849999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 86.9828,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "w",
+    "dwell_time": 102.9721,
+    "flight_time": 425.2208,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 87.04719999999999,
+    "flight_time": 67.9746,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 107.0041,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 107.9905,
+    "flight_time": 5.9874,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 66.994,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 104.01509999999999,
+    "flight_time": 25.086599999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 148.0154,
+    "flight_time": 23.017699999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 150.02849999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 146.96429999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 64.01219999999999,
+    "flight_time": 22.034699999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 84.00789999999999,
+    "flight_time": 109.0187,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 103.9863,
+    "flight_time": 25.007299999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 107.01809999999999,
+    "flight_time": 42.0117,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 86.009,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 84.009,
+    "flight_time": 3.9181999999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 127.96459999999999,
+    "flight_time": 226.1609,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 106.9799,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 84.0152,
+    "flight_time": 60.912299999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 104.018,
+    "flight_time": 369.1302,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 107.0372,
+    "flight_time": 65.98049999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 146.965,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "j",
+    "dwell_time": 104.0377,
+    "flight_time": 105.1194,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 106.98769999999999,
+    "flight_time": 42.993199999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 107.0038,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 126.9743,
+    "flight_time": 26.0109,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 86.021,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 105.02449999999999,
+    "flight_time": 6.0924,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 85.9812,
+    "flight_time": 102.0141,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 109.9938,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 148.0402,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 84.01259999999999,
+    "flight_time": 23.1012,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 103.0543,
+    "flight_time": 60.962199999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 168.023,
+    "flight_time": 3.9863999999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 87.0089,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 64.0184,
+    "flight_time": 4.8959,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 86.9662,
+    "flight_time": 123.1413,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 106.9964,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 43.011199999999995,
+    "flight_time": 43.9664,
+    "is_correction": 0
+  },
+  {
+    "key": "v",
+    "dwell_time": 130.046,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 84.2012,
+    "flight_time": 6.0001,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 84.04039999999999,
+    "flight_time": 61.8,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 62.980999999999995,
+    "flight_time": 190.90529999999998,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 62.9846,
+    "flight_time": 105.03699999999999,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 83.06349999999999,
+    "flight_time": 63.999399999999994,
+    "is_correction": 1
+  },
+  {
+    "key": "i",
+    "dwell_time": 104.9521,
+    "flight_time": 160.1885,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 129.9203,
+    "flight_time": 41.9814,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 69.9305,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 69.0097,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 43.0173,
+    "flight_time": 124.1108,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 65.9675,
+    "flight_time": 354.95099999999996,
+    "is_correction": 1
+  },
+  {
+    "key": "d",
+    "dwell_time": 130.9727,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 106.954,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 128.021,
+    "flight_time": 26.9986,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 130.9915,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.9932,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 104.021,
+    "flight_time": 103.12299999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 83.0111,
+    "flight_time": 47.9969,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 123.99759999999999,
+    "flight_time": 161.9203,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 64.006,
+    "flight_time": 38.0077,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 106.9639,
+    "flight_time": 125.1317,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 107.0227,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 105.00919999999999,
+    "flight_time": 14.9192,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 64.0104,
+    "flight_time": 27.993599999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 83.69069999999999,
+    "flight_time": 207.4298,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 107.01119999999999,
+    "flight_time": 24.012999999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 149.97539999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 83.2503,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 86.9898,
+    "flight_time": 69.7538,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 109.9927,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 87.01259999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 127.0161,
+    "flight_time": 165.1078,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 107.1742,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 106.0165,
+    "flight_time": 48.8153,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.9999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 103.99,
+    "flight_time": 268.1379,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 104.247,
+    "flight_time": 61.0156,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 87.0056,
+    "flight_time": 79.77069999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 127.0268,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "j",
+    "dwell_time": 84.00439999999999,
+    "flight_time": 44.0999,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 126.9969,
+    "flight_time": 83.9981,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 147.1894,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 124.04039999999999,
+    "flight_time": 46.8074,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 86.9926,
+    "flight_time": 63.8921,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 107.01209999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 83.0021,
+    "flight_time": 45.000499999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 103.98559999999999,
+    "flight_time": 61.030499999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 86.9718,
+    "flight_time": 25.895,
+    "is_correction": 0
+  },
+  {
+    "key": "w",
+    "dwell_time": 147.0134,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 144.8233,
+    "flight_time": 22.1796,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 43.007999999999996,
+    "flight_time": 50.8923,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 130.0058,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 63.0222,
+    "flight_time": 103.90299999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 106.01689999999999,
+    "flight_time": 188.11509999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 106.984,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 103.9944,
+    "flight_time": 3.9265999999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 107.99159999999999,
+    "flight_time": 45.0896,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 89.0022,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 87.0037,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 84.02069999999999,
+    "flight_time": 140.12619999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 82.96079999999999,
+    "flight_time": 9.982099999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 147.0657,
+    "flight_time": 22.9983,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 106.9969,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 107.04119999999999,
+    "flight_time": 3.9652999999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 106.98689999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 126.00779999999999,
+    "flight_time": 24.0184,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 87.0389,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 84.06869999999999,
+    "flight_time": 103.00829999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 83.06559999999999,
+    "flight_time": 6.834499999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 106.9322,
+    "flight_time": 125.10409999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 107.0026,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 107.92309999999999,
+    "flight_time": 142.0847,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 68.9801,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 107.0642,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 103.85839999999999,
+    "flight_time": 21.1756,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 107.00009999999999,
+    "flight_time": 4.9613,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.9823,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 106.9884,
+    "flight_time": 45.1262,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 87.0565,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "?",
+    "dwell_time": 103.9587,
+    "flight_time": 155.0618,
+    "is_correction": 0
+  },
+  {
+    "key": "shift",
+    "dwell_time": 211.0272,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 124.00619999999999,
+    "flight_time": 28.999699999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 125.04939999999999,
+    "flight_time": 309.11699999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 63.008399999999995,
+    "flight_time": 122.9879,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 64.0251,
+    "flight_time": 273.8999,
+    "is_correction": 1
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 130.01069999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 84.0192,
+    "flight_time": 76.00399999999999,
+    "is_correction": 1
+  },
+  {
+    "key": "l",
+    "dwell_time": 106.9932,
+    "flight_time": 140.1404,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 126.9858,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 83.9695,
+    "flight_time": 51.162099999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "k",
+    "dwell_time": 126.997,
+    "flight_time": 104.0086,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 89.9849,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 128.0271,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 107.0347,
+    "flight_time": 146.0952,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 86.2101,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 64.0074,
+    "flight_time": 136.8065,
+    "is_correction": 1
+  },
+  {
+    "key": "i",
+    "dwell_time": 88.01219999999999,
+    "flight_time": 159.1395,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 127.01639999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.0101,
+    "flight_time": 110.01639999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 86.91919999999999,
+    "flight_time": 64.1341,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 88.9996,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 87.03949999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 63.9921,
+    "flight_time": 207.11839999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 62.6485,
+    "flight_time": 124.362,
+    "is_correction": 0
+  },
+  {
+    "key": "k",
+    "dwell_time": 106.9528,
+    "flight_time": 124.0319,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 86.9874,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 64.0418,
+    "flight_time": 5.8942,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 84.0118,
+    "flight_time": 406.152,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 106.9694,
+    "flight_time": 25.981399999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "v",
+    "dwell_time": 151.0128,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 107.00309999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 64.0385,
+    "flight_time": 234.93349999999998,
+    "is_correction": 1
+  },
+  {
+    "key": "i",
+    "dwell_time": 82.9369,
+    "flight_time": 140.15789999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 107.0128,
+    "flight_time": 42.9863,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 109.9935,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 87.0286,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 106.97749999999999,
+    "flight_time": 182.1276,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 108.20819999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 127.0153,
+    "flight_time": 46.816399999999994,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 129.9034,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.01249999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 125.01859999999999,
+    "flight_time": 67.0765,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 148.0113,
+    "flight_time": 17.043599999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 86.8047,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 84.1377,
+    "flight_time": 103.0054,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 86.9649,
+    "flight_time": 83.92569999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 86.9829,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 148.10999999999999,
+    "flight_time": 41.991299999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 109.9382,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.9961,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 83.0146,
+    "flight_time": 86.1584,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 22.9838,
+    "flight_time": 142.9882,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 109.8925,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 104.9883,
+    "flight_time": 100.1857,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 106.96799999999999,
+    "flight_time": 46.971799999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 106.9434,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 106.9777,
+    "flight_time": 61.087599999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 85.99759999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "f",
+    "dwell_time": 83.033,
+    "flight_time": 22.1099,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 107.0059,
+    "flight_time": 6.9665,
+    "is_correction": 0
+  },
+  {
+    "key": "x",
+    "dwell_time": 128.0026,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 103.19319999999999,
+    "flight_time": 109.03609999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 146.84109999999998,
+    "flight_time": 42.960699999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 129.9827,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.9871,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 84.0184,
+    "flight_time": 58.117599999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 63.006099999999996,
+    "flight_time": 73.026,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 104.0115,
+    "flight_time": 117.0166,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 83.0419,
+    "flight_time": 6.8601,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 62.9677,
+    "flight_time": 496.0755,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 104.0163,
+    "flight_time": 84.0098,
+    "is_correction": 1
+  },
+  {
+    "key": "p",
+    "dwell_time": 105.9699,
+    "flight_time": 102.14179999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 110.0334,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 86.9862,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 107.0543,
+    "flight_time": 104.0683,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 85.9876,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "w",
+    "dwell_time": 104.0342,
+    "flight_time": 16.978099999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 103.99839999999999,
+    "flight_time": 105.0189,
+    "is_correction": 0
+  },
+  {
+    "key": "v",
+    "dwell_time": 107.01249999999999,
+    "flight_time": 45.009499999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 147.01829999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 127.01459999999999,
+    "flight_time": 43.9959,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 108.0009,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 103.9943,
+    "flight_time": 123.14909999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 104.0316,
+    "flight_time": 3.9637,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 84.0183,
+    "flight_time": 167.02779999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 82.9643,
+    "flight_time": 17.0111,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 127.9983,
+    "flight_time": 6.9109,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 107.01809999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 104.03399999999999,
+    "flight_time": 26.9868,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 106.9713,
+    "flight_time": 45.003699999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 110.0144,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 67.0115,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "b",
+    "dwell_time": 105.9759,
+    "flight_time": 530.2017,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 146.9976,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 62.9938,
+    "flight_time": 68.9966,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 130.00369999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 84.03229999999999,
+    "flight_time": 4.9154,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 84.0308,
+    "flight_time": 182.1208,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 106.9785,
+    "flight_time": 60.9846,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 106.99799999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 165.0227,
+    "flight_time": 108.01419999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 83.9995,
+    "flight_time": 42.904599999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 63.9968,
+    "flight_time": 142.1076,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 104.02239999999999,
+    "flight_time": 26.0037,
+    "is_correction": 0
+  },
+  {
+    "key": "z",
+    "dwell_time": 126.9867,
+    "flight_time": 18.9966,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.0375,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 104.2372,
+    "flight_time": 167.12609999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 105.0469,
+    "flight_time": 20.6379,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 63.0244,
+    "flight_time": 251.9928,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 83.0078,
+    "flight_time": 105.0137,
+    "is_correction": 1
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 84.00319999999999,
+    "flight_time": 30.9912,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 87.0082,
+    "flight_time": 72.1442,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 128.0119,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 62.9845,
+    "flight_time": 51.1376,
+    "is_correction": 0
+  },
+  {
+    "key": "k",
+    "dwell_time": 108.9829,
+    "flight_time": 144.9998,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 69.96549999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 110.0325,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "f",
+    "dwell_time": 103.9991,
+    "flight_time": 284.1398,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 86.0137,
+    "flight_time": 27.9698,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 109.7918,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 66.9764,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 146.98669999999998,
+    "flight_time": 183.15689999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 151.0317,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 127.0163,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 84.1241,
+    "flight_time": 30.897199999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.0055,
+    "flight_time": 100.8967,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 127.9519,
+    "flight_time": 349.16859999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 149.99599999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.00269999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "j",
+    "dwell_time": 123.8393,
+    "flight_time": 105.28389999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 104.0077,
+    "flight_time": 534.9624,
+    "is_correction": 1
+  },
+  {
+    "key": "j",
+    "dwell_time": 42.9302,
+    "flight_time": 807.2723,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 65.9686,
+    "flight_time": 251.89759999999998,
+    "is_correction": 1
+  },
+  {
+    "key": "s",
+    "dwell_time": 65.9998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 83.9973,
+    "flight_time": 276.8985,
+    "is_correction": 1
+  },
+  {
+    "key": "j",
+    "dwell_time": 104.91109999999999,
+    "flight_time": 846.3171,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 103.96369999999999,
+    "flight_time": 124.03519999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 105.0008,
+    "flight_time": 17.9922,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 128.0142,
+    "flight_time": 4.9923,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 67.0093,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 103.9782,
+    "flight_time": 65.11529999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 87.033,
+    "flight_time": 16.9927,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.0072,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": ".",
+    "dwell_time": 124.91329999999999,
+    "flight_time": 1038.3015,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 143.9519,
+    "flight_time": 140.9673,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 123.99,
+    "flight_time": 605.0829,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 42.937799999999996,
+    "flight_time": 391.227,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 123.99109999999999,
+    "flight_time": 39.863499999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 83.9499,
+    "flight_time": 168.18619999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 124.0081,
+    "flight_time": 67.0077,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 86.97959999999999,
+    "flight_time": 271.9445,
+    "is_correction": 1
+  },
+  {
+    "key": "q",
+    "dwell_time": 106.99289999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 103.9824,
+    "flight_time": 88.98689999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 104.01729999999999,
+    "flight_time": 146.0291,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 168.15099999999998,
+    "flight_time": 78.9534,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 86.9998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 147.04479999999998,
+    "flight_time": 27.985599999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 106.94149999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 85.9833,
+    "flight_time": 88.0058,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 106.9842,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 84.0261,
+    "flight_time": 100.98039999999999,
+    "is_correction": 0
+  },
+  {
+    "key": ".",
+    "dwell_time": 105.0273,
+    "flight_time": 51.0222,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 104.0373,
+    "flight_time": 78.968,
+    "is_correction": 0
+  },
+  {
+    "key": "x",
+    "dwell_time": 125.0324,
+    "flight_time": 40.978899999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 127.00489999999999,
+    "flight_time": 3.9856,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.9915,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 106.978,
+    "flight_time": 86.11659999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 106.9691,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 45.9781,
+    "flight_time": 46.9416,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 150.0283,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 89.9936,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "f",
+    "dwell_time": 150.983,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 66.9801,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 106.9973,
+    "flight_time": 145.0078,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 66.9984,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.04249999999999,
+    "flight_time": 5.9047,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 124.03389999999999,
+    "flight_time": 160.1076,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 62.995799999999996,
+    "flight_time": 27.8755,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 63.9828,
+    "flight_time": 233.0631,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 83.9988,
+    "flight_time": 103.0089,
+    "is_correction": 1
+  },
+  {
+    "key": "t",
+    "dwell_time": 104.2284,
+    "flight_time": 16.1386,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 106.9973,
+    "flight_time": 84.81139999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 129.9793,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 88.9637,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 87.0171,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 124.07289999999999,
+    "flight_time": 19.073,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 103.8959,
+    "flight_time": 452.1801,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 65.9718,
+    "flight_time": 66.9988,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 105.0568,
+    "flight_time": 58.0104,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 194.9989,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 85.0007,
+    "flight_time": 101.0586,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 86.99929999999999,
+    "flight_time": 25.8541,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 107.0625,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 104.0003,
+    "flight_time": 70.9691,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 127.0042,
+    "flight_time": 63.9935,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 88.9527,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 128.0118,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 85.9684,
+    "flight_time": 64.98599999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 87.00659999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.0209,
+    "flight_time": 45.8869,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 85.98769999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 63.9169,
+    "flight_time": 104.1702,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 125.06779999999999,
+    "flight_time": 8.927,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 125.02069999999999,
+    "flight_time": 15.969,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 124.02489999999999,
+    "flight_time": 66.9934,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 123.9948,
+    "flight_time": 40.9901,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 66.9898,
+    "flight_time": 395.94919999999996,
+    "is_correction": 1
+  },
+  {
+    "key": "d",
+    "dwell_time": 65.9763,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 83.77969999999999,
+    "flight_time": 105.2127,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 148.01229999999998,
+    "flight_time": 66.9722,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 128.0059,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 126.91529999999999,
+    "flight_time": 66.9924,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 66.9506,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 107.01169999999999,
+    "flight_time": 83.0367,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 89.9892,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 88.9977,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 107.0041,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 67.00489999999999,
+    "flight_time": 19.9067,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 127.98899999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 84.03909999999999,
+    "flight_time": 25.9925,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 128.0318,
+    "flight_time": 42.9795,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 69.913,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 127.0426,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 84.0302,
+    "flight_time": 43.9614,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 127.0145,
+    "flight_time": 4.9913,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 110.0097,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 90.0089,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 108.9742,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 66.9647,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 84.01979999999999,
+    "flight_time": 84.00789999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.02199999999999,
+    "flight_time": 18.8931,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 105.04769999999999,
+    "flight_time": 45.116699999999994,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 86.69449999999999,
+    "flight_time": 21.2468,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 126.991,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "f",
+    "dwell_time": 127.00789999999999,
+    "flight_time": 21.1099,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 106.0024,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 64.0052,
+    "flight_time": 147.0274,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 83.984,
+    "flight_time": 102.99759999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 84.0021,
+    "flight_time": 40.9098,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 126.94829999999999,
+    "flight_time": 409.1916,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 147.98839999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.0419,
+    "flight_time": 63.8666,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 106.987,
+    "flight_time": 65.0915,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 86.9782,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 64.0242,
+    "flight_time": 105.0102,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 128.0197,
+    "flight_time": 82.0039,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.0051,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 124.9853,
+    "flight_time": 584.0974,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 103.96929999999999,
+    "flight_time": 125.16279999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 124.0253,
+    "flight_time": 230.0178,
+    "is_correction": 0
+  },
+  {
+    "key": "k",
+    "dwell_time": 104.01729999999999,
+    "flight_time": 187.0147,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 126.9844,
+    "flight_time": 35.8749,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.0266,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 103.957,
+    "flight_time": 126.18679999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 106.9926,
+    "flight_time": 122.99069999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 67.0044,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 106.01089999999999,
+    "flight_time": 87.083,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 150.0418,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 87.0026,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 86.9868,
+    "flight_time": 124.0259,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 107.0082,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 24.007099999999998,
+    "flight_time": 148.8869,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 131.02009999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 83.9815,
+    "flight_time": 188.01649999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 63.9329,
+    "flight_time": 209.0296,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 63.0115,
+    "flight_time": 83.98989999999999,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 63.9728,
+    "flight_time": 104.0226,
+    "is_correction": 1
+  },
+  {
+    "key": "space",
+    "dwell_time": 84.02329999999999,
+    "flight_time": 77.0009,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 84.01639999999999,
+    "flight_time": 42.1341,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 83.9961,
+    "flight_time": 46.9736,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 104.002,
+    "flight_time": 80.9417,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 83.9814,
+    "flight_time": 81.1009,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 104.00779999999999,
+    "flight_time": 48.003299999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 64.01339999999999,
+    "flight_time": 143.0246,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 105.01689999999999,
+    "flight_time": 146.0117,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 106.99669999999999,
+    "flight_time": 14.9872,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 131.0092,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 108.9626,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 67.015,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 107.00619999999999,
+    "flight_time": 43.0898,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 106.018,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 107.0637,
+    "flight_time": 162.9047,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 168.0608,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 83.9802,
+    "flight_time": 85.9031,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 103.9979,
+    "flight_time": 103.14609999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 83.0135,
+    "flight_time": 146.0105,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 84.0039,
+    "flight_time": 6.9893,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 106.966,
+    "flight_time": 122.00349999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 132.9168,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 109.99119999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 108.97279999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 83.9647,
+    "flight_time": 60.105999999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 84.0099,
+    "flight_time": 87.0392,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 87.0004,
+    "flight_time": 107.023,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 85.9476,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 63.995999999999995,
+    "flight_time": 495.9862,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 107.00059999999999,
+    "flight_time": 82.9836,
+    "is_correction": 1
+  },
+  {
+    "key": "y",
+    "dwell_time": 127.00829999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 106.9917,
+    "flight_time": 65.9857,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 108.97829999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 85.98859999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 147.01909999999998,
+    "flight_time": 163.12449999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 109.9643,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 148.2551,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 104.0047,
+    "flight_time": 9.755899999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 86.01379999999999,
+    "flight_time": 124.0268,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 86.9772,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 84.04549999999999,
+    "flight_time": 45.9916,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 83.9983,
+    "flight_time": 25.982799999999997,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 147.9973,
+    "flight_time": 19.0165,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 106.9777,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 64.0114,
+    "flight_time": 31.020699999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 106.9827,
+    "flight_time": 84.01129999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 109.95769999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.0073,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 103.9641,
+    "flight_time": 666.2454,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 107.9999,
+    "flight_time": 7.9654,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 85.9703,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.99889999999999,
+    "flight_time": 5.9208,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 129.962,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 130.0343,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 91.0252,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 131.0153,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 106.9827,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 87.0163,
+    "flight_time": 8.9793,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 87.02149999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 82.9713,
+    "flight_time": 161.12439999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 106.9369,
+    "flight_time": 92.0465,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 85.9987,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "q",
+    "dwell_time": 104.9814,
+    "flight_time": 140.1414,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 63.097899999999996,
+    "flight_time": 48.891099999999994,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 85.9919,
+    "flight_time": 149.0283,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 154.0007,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 113.9675,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 128.02339999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 62.817499999999995,
+    "flight_time": 313.2118,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 84.0155,
+    "flight_time": 84.0042,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 64.0014,
+    "flight_time": 83.9879,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 104.00319999999999,
+    "flight_time": 185.0351,
+    "is_correction": 1
+  },
+  {
+    "key": "i",
+    "dwell_time": 106.955,
+    "flight_time": 221.1576,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 109.94489999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 87.00009999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 103.99969999999999,
+    "flight_time": 24.9138,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 107.00359999999999,
+    "flight_time": 164.1341,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 106.9965,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "h",
+    "dwell_time": 85.9884,
+    "flight_time": 202.9887,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 85.9905,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 148.23239999999998,
+    "flight_time": 3.9677,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 87.0273,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "n",
+    "dwell_time": 104.0402,
+    "flight_time": 67.98729999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 83.9855,
+    "flight_time": 514.9759,
+    "is_correction": 1
+  },
+  {
+    "key": "n",
+    "dwell_time": 83.9185,
+    "flight_time": 888.3315,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 82.997,
+    "flight_time": 41.9698,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 66.0152,
+    "flight_time": 67.95439999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 108.0253,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 62.733799999999995,
+    "flight_time": 0.1338,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 106.9083,
+    "flight_time": 289.1529,
+    "is_correction": 0
+  },
+  {
+    "key": "f",
+    "dwell_time": 109.9472,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 88.0034,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 86.9636,
+    "flight_time": 105.1249,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 106.9824,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "m",
+    "dwell_time": 126.99589999999999,
+    "flight_time": 65.1217,
+    "is_correction": 0
+  },
+  {
+    "key": "a",
+    "dwell_time": 86.9973,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 107.98519999999999,
+    "flight_time": 68.0369,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 87.00909999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 125.01249999999999,
+    "flight_time": 121.107,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 83.9977,
+    "flight_time": 70.0112,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 84.0119,
+    "flight_time": 19.894299999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "!",
+    "dwell_time": 143.9487,
+    "flight_time": 224.2676,
+    "is_correction": 0
+  },
+  {
+    "key": "shift",
+    "dwell_time": 396.0723,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 127.0163,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 108.00319999999999,
+    "flight_time": 543.0677999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "l",
+    "dwell_time": 127.0046,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "caps_lock",
+    "dwell_time": 84.00189999999999,
+    "flight_time": 14.852699999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 64.0231,
+    "flight_time": 91.0774,
+    "is_correction": 0
+  },
+  {
+    "key": "k",
+    "dwell_time": 106.9771,
+    "flight_time": 145.02779999999998,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 150.02599999999998,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.0025,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "i",
+    "dwell_time": 106.9969,
+    "flight_time": 105.1242,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 107.0166,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "s",
+    "dwell_time": 126.98349999999999,
+    "flight_time": 121.01389999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.00439999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "p",
+    "dwell_time": 127.09129999999999,
+    "flight_time": 7.0028999999999995,
+    "is_correction": 0
+  },
+  {
+    "key": "r",
+    "dwell_time": 131.0068,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "e",
+    "dwell_time": 87.00999999999999,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 84.0193,
+    "flight_time": 105.9892,
+    "is_correction": 0
+  },
+  {
+    "key": "t",
+    "dwell_time": 64.02709999999999,
+    "flight_time": 103.9831,
+    "is_correction": 0
+  },
+  {
+    "key": "y",
+    "dwell_time": 86.9953,
+    "flight_time": 105.01729999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 107.9949,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 86.97409999999999,
+    "flight_time": 86.1194,
+    "is_correction": 0
+  },
+  {
+    "key": "g",
+    "dwell_time": 128.0048,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 104.0249,
+    "flight_time": 66.9987,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 64.0124,
+    "flight_time": 168.903,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 83.9994,
+    "flight_time": 104.0158,
+    "is_correction": 1
+  },
+  {
+    "key": "g",
+    "dwell_time": 104.96679999999999,
+    "flight_time": 156.1704,
+    "is_correction": 0
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 63.9916,
+    "flight_time": 110.8981,
+    "is_correction": 1
+  },
+  {
+    "key": "backspace",
+    "dwell_time": 64.0095,
+    "flight_time": 84.0279,
+    "is_correction": 1
+  },
+  {
+    "key": "g",
+    "dwell_time": 103.99239999999999,
+    "flight_time": 56.1119,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 64.0208,
+    "flight_time": 26.9836,
+    "is_correction": 0
+  },
+  {
+    "key": "o",
+    "dwell_time": 64.1388,
+    "flight_time": 103.0478,
+    "is_correction": 0
+  },
+  {
+    "key": "d",
+    "dwell_time": 103.9457,
+    "flight_time": 36.960499999999996,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 84.04249999999999,
+    "flight_time": 5.808599999999999,
+    "is_correction": 0
+  },
+  {
+    "key": "c",
+    "dwell_time": 83.00909999999999,
+    "flight_time": 224.1351,
+    "is_correction": 0
+  },
+  {
+    "key": "u",
+    "dwell_time": 104.0565,
+    "flight_time": 6.9453,
+    "is_correction": 0
+  },
+  {
+    "key": "z",
+    "dwell_time": 104.0148,
+    "flight_time": 37.9856,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 128.022,
+    "flight_time": 26.8857,
+    "is_correction": 0
+  },
+  {
+    "key": "!",
+    "dwell_time": 164.9543,
+    "flight_time": 220.1804,
+    "is_correction": 0
+  },
+  {
+    "key": "shift",
+    "dwell_time": 500.0105,
+    "flight_time": 0,
+    "is_correction": 0
+  },
+  {
+    "key": "space",
+    "dwell_time": 148.0151,
+    "flight_time": 0,
+    "is_correction": 0
+  }
+]
