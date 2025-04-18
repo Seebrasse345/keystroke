@@ -17,7 +17,6 @@ from __future__ import annotations
 import os, json, random, numpy as np
 from typing import List, Dict, Any
 
-
 class TypingSequenceGenerator:
     # ----------------------------------------------------- init / profile
     def __init__(self, user_id: str):
@@ -60,7 +59,7 @@ class TypingSequenceGenerator:
 
     # ----------------------------------------------------------- helpers
     def _map_char(self, ch: str) -> str:
-        return {" ": "space", "\n": "enter", "\t": "tab"}.get(ch, ch)
+        return { " ": "space", "\n": "enter", "\t": "tab" }.get(ch, ch)
 
     def _adjacent_keys(self, key: str) -> list[str]:
         for r, row in enumerate(self.qwerty_rows):
@@ -97,8 +96,6 @@ class TypingSequenceGenerator:
         tot=sum(dist.values())
         if tot==0:
             return random.choice(list(dist))
-        if tot==0:
-            return random.choice(list(dist))  # all zero → random cluster
         return random.choices(list(dist), weights=[v/tot for v in dist.values()])[0]
 
     def _error_key(self, correct: str, cluster: str, error_type:str) -> str:
@@ -206,35 +203,8 @@ class TypingSequenceGenerator:
         style=self.profile.get("correction_style",{"immediate":1,"delayed":1})
         tot=style["immediate"]+style["delayed"]
         if tot==0:
-            return random.random()
+            return 0.5
         return style["immediate"]/tot if tot else .8
-
-    def save_sequence(self, sequence, output_path: str | None = None):
-        """
-        Persist sequence to a simple key|dwell|flight text file that the
-        AHK replay tool consumes.
-        """
-        if output_path is None:
-            output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "typing_sequence.txt")
-        with open(output_path, "w", encoding="utf-8") as f:
-            f.write("key|dwell|flight\n")
-            for row in sequence:
-                key = row["key"]
-                # Map to AHK send syntax
-                if key in ("space", " "):
-                    key_out = "{Space}"
-                elif key == "enter":
-                    key_out = "{Enter}"
-                elif key == "backspace":
-                    key_out = "{Backspace}"
-                elif key == "tab":
-                    key_out = "{Tab}"
-                elif len(key) == 1 and key in "+^!#{}":
-                    key_out = "{" + key + "}"
-                else:
-                    key_out = key
-                f.write(f"{key_out}|{int(row['dwell'])}|{int(row['flight'])}\n")
-        return output_path
 
     def _replay(self,seq)->str:
         buf=[]
@@ -268,3 +238,30 @@ class TypingSequenceGenerator:
             seq.append(self._make_event(k,prev)); prev=k
         assert self._replay(seq)==text
         return seq
+
+def save_sequence(sequence, output_path: str | None = None):
+    """
+    Persist sequence to a simple key|dwell|flight text file that the
+    AHK replay tool consumes.
+    """
+    if output_path is None:
+        output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "typing_sequence.txt")
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write("key|dwell|flight\n")
+        for row in sequence:
+            key = row["key"]
+            # Map to AHK send syntax
+            if key in ("space", " "):
+                key_out = "{Space}"
+            elif key == "enter":
+                key_out = "{Enter}"
+            elif key == "backspace":
+                key_out = "{Backspace}"
+            elif key == "tab":
+                key_out = "{Tab}"
+            elif len(key) == 1 and key in "+^!#{}":
+                key_out = "{" + key + "}"
+            else:
+                key_out = key
+            f.write(f"{key_out}|{int(row['dwell'])}|{int(row['flight'])}\n")
+    return output_path
