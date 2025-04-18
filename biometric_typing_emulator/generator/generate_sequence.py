@@ -1,267 +1,244 @@
 """
-TypingSequenceGenerator – full typo modelling
-============================================
-• Synthesises keystroke‑level timing *and* stochastic error patterns that
-  mirror the specific user profile collected by `record_typing.py`.
-• Injects typos according to:
-    – overall typo_rate
-    – distribution of error types (double‑letter / inserted / missed / reversed)
-    – cluster likelihoods (home‑row, adjacent, same‑hand, other)
-    – common two‑char patterns (profile.common_typo_patterns)
-• Then automatically repairs them (immediate vs delayed) in line with
-  profile.correction_style.
-• Final post‑pass guarantees the produced logical text == input text.
+TypingSequenceGenerator – final fixed build
+===========================================
+• Uses per‑user timing & typo stats.
+• Shift treated as press+release: only the *next* character is upper‑cased,
+  so replay validation always matches the intended text.
+• Guards against zero‑weight distributions.
+• Provides save_sequence() for GUI / AHK replay.
 """
 
 from __future__ import annotations
 import os, json, random, numpy as np
 from typing import List, Dict, Any
 
-class TypingSequenceGenerator:
-    # ----------------------------------------------------- init / profile
-    def __init__(self, user_id: str):
-        self.user_id = user_id
-        base = os.path.dirname(os.path.dirname(__file__))
-        self.profile_path = os.path.join(base, "profiles", user_id, f"{user_id}_profile.json")
-        self._load_profile()
 
-        # static keyboard map
-        self.qwerty_rows = [
+class TypingSequenceGenerator:
+    # ------------------------------------------------------------------ init
+    def __init__(self, user_id: str):
+        root = os.path.dirname(os.path.dirname(__file__))
+        self.user_id = user_id
+        self.profile_path = os.path.join(root, "profiles", user_id,
+                                         f"{user_id}_profile.json")
+        with open(self.profile_path, "r", encoding="utf-8") as f:
+            self.profile = json.load(f)
+
+        if not self.profile.get("mean_dwell_times"):
+            raise ValueError("Profile incomplete – record more data.")
+
+        # simple keyboard map
+        self.rows = [
             "1234567890-=",
             "qwertyuiop[]\\",
             "asdfghjkl;'",
             "zxcvbnm,./"
         ]
-        self.left_hand = "qwertasdfgzxcv"
-        self.right_hand = "yuiophjklnm"
+        self.left = "qwertasdfgzxcv"
+        self.right = "yuiophjklnm"
 
-    def _load_profile(self):
-        with open(self.profile_path, "r", encoding="utf-8") as fh:
-            self.profile: Dict[str, Any] = json.load(fh)
-        if not self.profile.get("mean_dwell_times"):  # rudimentary check
-            raise ValueError("Incomplete profile – record more data.")
-
-    # ----------------------------------------------------------- timings
-    def _dwell(self, key: str) -> float:
-        md = self.profile["mean_dwell_times"]; sd = self.profile["std_dwell_times"]
+    # ----------------------------------------------------- low‑level timing
+    def _dwell(self, key: str):
+        md, sd = self.profile["mean_dwell_times"], self.profile["std_dwell_times"]
         if key in md:
-            return max(8.0, np.random.normal(md[key], sd.get(key, md[key]*.1)))
-        avg = sum(md.values())/len(md)
-        return max(8.0, np.random.normal(avg, avg*.1))
+            return max(8.0, np.random.normal(md[key], sd.get(key, md[key] * .1)))
+        mean = sum(md.values()) / len(md)
+        return max(8.0, np.random.normal(mean, mean * .1))
 
-    def _flight(self, prev: str, curr: str) -> float:
-        mf = self.profile["mean_flight_times"]; sf = self.profile["std_flight_times"]
+    def _flight(self, prev: str, curr: str):
+        mf, sf = self.profile["mean_flight_times"], self.profile["std_flight_times"]
         pair = f"{prev}→{curr}"
         if pair in mf:
-            return max(3.0, np.random.normal(mf[pair], sf.get(pair, mf[pair]*.15)))
-        avg = sum(mf.values())/len(mf)
-        return max(3.0, np.random.normal(avg, avg*.15))
+            return max(3.0, np.random.normal(mf[pair], sf.get(pair, mf[pair] * .15)))
+        mean = sum(mf.values()) / len(mf)
+        return max(3.0, np.random.normal(mean, mean * .15))
 
-    # ----------------------------------------------------------- helpers
-    def _map_char(self, ch: str) -> str:
-        return { " ": "space", "\n": "enter", "\t": "tab" }.get(ch, ch)
+    # --------------------------------------------------------- typo helpers
+    def _should_typo(self):     return random.random() < self.profile.get("typo_rate", .03)
 
-    def _adjacent_keys(self, key: str) -> list[str]:
-        for r, row in enumerate(self.qwerty_rows):
+    def _pick(self, d: dict):   # safe choice even if all weights zero
+        tot = sum(d.values())
+        if tot == 0: return random.choice(list(d))
+        return random.choices(list(d), weights=[v / tot for v in d.values()])[0]
+
+    def _error_type(self):
+        return self._pick({
+            "double":   self.profile.get("double_letter_error_rate", .4),
+            "inserted": self.profile.get("inserted_letter_rate",      .3),
+            "missed":   self.profile.get("missed_letter_rate",        .2),
+            "reversed": self.profile.get("reversed_letters_rate",     .1)
+        })
+
+    def _cluster(self):
+        typ = self.profile.get("typo_clusters", {})
+        return self._pick({k: typ.get(k, 1) for k in
+                           ["home_row", "adjacent_keys", "same_hand", "other"]})
+
+    def _error_key(self, key: str, cluster: str):
+        if cluster == "home_row":  pool = "asdfghjkl;"
+        elif cluster == "adjacent_keys": pool = self._adjacent(key)
+        elif cluster == "same_hand": pool = self.left if key in self.left else self.right
+        else: pool = "qwertyuiopasdfghjklzxcvbnm"
+        return random.choice(pool)
+
+    def _adjacent(self, key: str):
+        for r, row in enumerate(self.rows):
             if key in row:
-                c = row.index(key); adj=[]
-                adj += [row[c-1]] if c>0 else []
-                adj += [row[c+1]] if c<len(row)-1 else []
-                if r>0:
-                    up = self.qwerty_rows[r-1]
-                    adj += [up[i] for i in range(max(0,c-1),min(len(up),c+2))]
-                if r<len(self.qwerty_rows)-1:
-                    down = self.qwerty_rows[r+1]
-                    adj += [down[i] for i in range(max(0,c-1),min(len(down),c+2))]
+                c = row.index(key); adj = []
+                if c > 0: adj.append(row[c-1])
+                if c < len(row)-1: adj.append(row[c+1])
+                if r: adj += [self.rows[r-1][i]
+                              for i in range(max(0, c-1), min(len(self.rows[r-1]), c+2))]
+                if r < len(self.rows)-1:
+                    adj += [self.rows[r+1][i]
+                            for i in range(max(0, c-1), min(len(self.rows[r+1]), c+2))]
                 return adj
         return list("qwertyuiopasdfghjklzxcvbnm")
 
-    # ------------------------------------------------ typo generation
-    def _should_typo(self) -> bool:
-        return random.random() < self.profile.get("typo_rate", 0.03)
+    def _immediate_prob(self):
+        st = self.profile.get("correction_style", {"immediate": 4, "delayed": 1})
+        tot = st["immediate"] + st["delayed"]
+        return .8 if tot == 0 else st["immediate"] / tot
 
-    def _choose_error_type(self) -> str:
-        dist = {
-            "double": self.profile.get("double_letter_error_rate", .4),
-            "inserted": self.profile.get("inserted_letter_rate", .3),
-            "missed": self.profile.get("missed_letter_rate", .2),
-            "reversed": self.profile.get("reversed_letters_rate", .1)
+    # --------------------------------------------------------- key emitter
+    def _emit(self, key: str, prev: str | None, corr=0):
+        return {
+            "key": key,
+            "dwell": self._dwell(key),
+            "flight": 0 if prev is None else self._flight(prev, key),
+            "is_correction": corr
         }
-        tot = sum(dist.values())
-        return random.choices(list(dist), weights=[v/tot for v in dist.values()])[0]
 
-    def _choose_cluster(self) -> str:
-        typ = self.profile.get("typo_clusters", {})
-        dist = {k: typ.get(k,1) for k in ["home_row","adjacent_keys","same_hand","other"]}
-        tot=sum(dist.values())
-        if tot==0:
-            return random.choice(list(dist))
-        return random.choices(list(dist), weights=[v/tot for v in dist.values()])[0]
-
-    def _error_key(self, correct: str, cluster: str, error_type:str) -> str:
-        if error_type=="double": return correct
-        if cluster=="home_row": pool="asdfghjkl;"  # simplistic
-        elif cluster=="adjacent_keys": pool=self._adjacent_keys(correct)
-        elif cluster=="same_hand":
-            pool=self.left_hand if correct in self.left_hand else self.right_hand
+    def _emit_key(self, key: str, prev: str | None):
+        res, p = [], prev
+        if len(key) == 1 and key.isupper():
+            res.append(self._emit("shift", p)); p = "shift"
+            res.append(self._emit(key.lower(), p)); p = key.lower()
+            res.append(self._emit("shift", p))      # release
         else:
-            pool="qwertyuiopasdfghjklzxcvbnm"
-        return random.choice(pool)
+            res.append(self._emit(key, p))
+        return res, res[-1]["key"]
 
-    # -------------- public --------------------------------------------
-    def generate_sequence(self, text:str, *, add_errors:bool=True) -> List[Dict[str,Any]]:
-        seq=[]
-        prev=None
-        logical_pos=0  # pointer into intended text
+    def _emit_bs(self, prev: str):
+        ev = self._emit("backspace", prev, corr=1)
+        return [ev], ev["key"]
 
-        while logical_pos < len(text):
-            ch=text[logical_pos]
-            key=self._map_char(ch)
+    # --------------------------------------------------- generation engine
+    def generate_sequence(self, text: str, *, add_errors=True) -> List[Dict[str, Any]]:
+        seq, prev = [], None
+        i = 0
+        while i < len(text):
+            ch = text[i]
+            key = {" ": "space", "\n": "enter", "\t": "tab"}.get(ch, ch)
 
+            # optional typo injection
             if add_errors and self._should_typo():
-                typ=self._choose_error_type()
-                cluster=self._choose_cluster()
+                etype = self._error_type(); cl = self._cluster()
+                if etype == "double":
+                    ev, prev = self._emit_key(key, prev); seq += ev
+                    ev, prev = self._emit_key(key, prev); seq += ev
+                    ev, prev = self._emit_bs(prev);       seq += ev
 
-                if typ=="double":
-                    # press key twice then immediate backspace
-                    seq.extend(self._emit_key(key, prev))
-                    prev=key
-                    seq.extend(self._emit_key(key, prev))
-                    prev=key
-                    seq.extend(self._emit_backspace(prev))
-                    prev="backspace"
-
-                elif typ=="inserted":
-                    wrong=self._error_key(key,cluster,typ)
-                    seq.extend(self._emit_key(wrong, prev))
-                    prev=wrong
-                    # delayed or immediate?
-                    if random.random() < self._immediate_correction_prob():
-                        seq.extend(self._emit_backspace(prev)); prev="backspace"
+                elif etype == "inserted":
+                    wrong = self._error_key(key, cl)
+                    ev, prev = self._emit_key(wrong, prev); seq += ev
+                    if random.random() < self._immediate_prob():
+                        ev, prev = self._emit_bs(prev); seq += ev
                     else:
-                        # delay by 1-2 correct chars then backspace them all
-                        lookahead=min(2,len(text)-logical_pos)
-                        for i in range(lookahead):
-                            nxt=self._map_char(text[logical_pos+i])
-                            seq.extend(self._emit_key(nxt, prev)); prev=nxt
-                        for _ in range(lookahead+1):
-                            seq.extend(self._emit_backspace(prev)); prev="backspace"
+                        look = min(2, len(text)-i)
+                        for j in range(look):
+                            nxt = {" ": "space", "\n": "enter", "\t": "tab"}.get(text[i+j], text[i+j])
+                            ev, prev = self._emit_key(nxt, prev); seq += ev
+                        for _ in range(look+1):
+                            ev, prev = self._emit_bs(prev); seq += ev
 
-                elif typ=="missed":
-                    # skip char, type next, then backspace and retype
-                    if logical_pos+1 < len(text):
-                        nxt=self._map_char(text[logical_pos+1])
-                        seq.extend(self._emit_key(nxt, prev)); prev=nxt
-                        seq.extend(self._emit_backspace(prev)); prev="backspace"
-                        seq.extend(self._emit_key(key, prev)); prev=key
-                        logical_pos+=1  # we already processed next char
-                elif typ=="reversed" and logical_pos+1 < len(text):
-                    nxt=self._map_char(text[logical_pos+1])
-                    seq.extend(self._emit_key(nxt, prev)); prev=nxt
-                    seq.extend(self._emit_key(key, prev)); prev=key
-                    # fix with two backspaces and correct order
-                    seq.extend(self._emit_backspace(prev)); prev="backspace"
-                    seq.extend(self._emit_backspace(prev)); prev="backspace"
-                    seq.extend(self._emit_key(key, prev)); prev=key
-                    seq.extend(self._emit_key(nxt, prev)); prev=nxt
-                    logical_pos+=1
-            # normal path
-            seq.extend(self._emit_key(key, prev)); prev=key
-            logical_pos+=1
+                elif etype == "missed" and i+1 < len(text):
+                    nxt = {" ": "space", "\n": "enter", "\t": "tab"}.get(text[i+1], text[i+1])
+                    ev, prev = self._emit_key(nxt, prev); seq += ev
+                    ev, prev = self._emit_bs(prev);       seq += ev
+                    ev, prev = self._emit_key(key, prev); seq += ev
+                    i += 1  # consumed an extra char
 
-        # final validation & repair
+                elif etype == "reversed" and i+1 < len(text):
+                    nxt = {" ": "space", "\n": "enter", "\t": "tab"}.get(text[i+1], text[i+1])
+                    ev, prev = self._emit_key(nxt, prev); seq += ev
+                    ev, prev = self._emit_key(key, prev); seq += ev
+                    ev, prev = self._emit_bs(prev); seq += ev
+                    ev, prev = self._emit_bs(prev); seq += ev
+                    ev, prev = self._emit_key(key, prev); seq += ev
+                    ev, prev = self._emit_key(nxt, prev); seq += ev
+                    i += 1
+
+            # intended character
+            ev, prev = self._emit_key(key, prev); seq += ev
+            i += 1
+
+        # final validation & minimal repair
         if self._replay(seq) != text:
-            seq=self._repair(seq,text)
+            seq = self._repair(seq, text)
         return seq
 
-    # ------------------------------------------------------ emit helpers
-    def _emit_key(self, key:str, prev:str|None)->List[Dict[str,Any]]:
-        arr=[]
-        # handle shift for upper-case
-        if len(key)==1 and key.isupper():
-            arr.extend(self._emit_key("shift", prev))
-            prev="shift"
-            key=key.lower()
-            arr.append(self._make_event(key,prev)); prev=key
-            arr.append(self._make_event("shift","shift"))  # Shift up acts like a key
-        else:
-            arr.append(self._make_event(key,prev))
-        return arr
+    # ----------------------------------------------------- replay / repair
+    def _replay(self, seq) -> str:
+        buf = []
+        shift_armed = False
+        expect_release = False
+        for ev in seq:
+            k = ev["key"]
 
-    def _emit_backspace(self, prev:str|None)->List[Dict[str,Any]]:
-        return [self._make_event("backspace", prev, correction=1)]
+            if k == "shift":
+                if not expect_release:       # this is the press
+                    shift_armed = True
+                    expect_release = True
+                else:                       # this is the release
+                    expect_release = False
+                continue
 
-    def _make_event(self,key:str, prev:str|None, correction:int=0)->Dict[str,Any]:
-        return {
-            "key":key,
-            "dwell": self._dwell(key),
-            "flight": 0 if prev is None else self._flight(prev,key),
-            "is_correction": correction
-        }
+            if k == "backspace":
+                if buf: buf.pop(); continue
+            if k in ("ctrl", "alt"): continue
+            if k == "enter": buf.append("\n"); continue
+            if k in ("space", " "): buf.append(" "); continue
 
-    def _immediate_correction_prob(self)->float:
-        style=self.profile.get("correction_style",{"immediate":1,"delayed":1})
-        tot=style["immediate"]+style["delayed"]
-        if tot==0:
-            return 0.5
-        return style["immediate"]/tot if tot else .8
-
-    def _replay(self,seq)->str:
-        buf=[]
-        for e in seq:
-            k=e["key"]
-            if k=="backspace":
-                if buf: buf.pop()
-            elif k in ("shift","ctrl","alt"): pass
-            elif k in ("enter",):
-                buf.append("\n")
-            elif k in ("space"," "):
-                buf.append(" ")
-            elif len(k)==1:
-                buf.append(k)
+            if len(k) == 1:
+                buf.append(k.upper() if shift_armed else k)
+                shift_armed = False
         return "".join(buf)
 
-    def _repair(self,seq,text)->List[Dict[str,Any]]:
-        current=self._replay(seq)
-        # brute: bring to equality by backspacing diff tail & retyping
-        # find divergence
-        common=0
-        for a,b in zip(current,text):
-            if a==b: common+=1
-            else: break
-        surplus=len(current)-common
-        prev=seq[-1]["key"]
+    def _repair(self, seq, target: str):
+        current = self._replay(seq)
+        pos = 0
+        while pos < min(len(current), len(target)) and current[pos] == target[pos]:
+            pos += 1
+        surplus = len(current) - pos
+        prev = seq[-1]["key"]
         for _ in range(surplus):
-            seq.append(self._make_event("backspace",prev,1)); prev="backspace"
-        for ch in text[common:]:
-            k=self._map_char(ch)
-            seq.append(self._make_event(k,prev)); prev=k
-        assert self._replay(seq)==text
+            bs, prev = self._emit_bs(prev); seq += bs
+
+        for ch in target[pos:]:
+            key = {" ": "space", "\n": "enter", "\t": "tab"}.get(ch, ch)
+            ev, prev = self._emit_key(key, prev); seq += ev
+
+        assert self._replay(seq) == target
         return seq
 
-def save_sequence(sequence, output_path: str | None = None):
-    """
-    Persist sequence to a simple key|dwell|flight text file that the
-    AHK replay tool consumes.
-    """
-    if output_path is None:
-        output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "typing_sequence.txt")
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write("key|dwell|flight\n")
-        for row in sequence:
-            key = row["key"]
-            # Map to AHK send syntax
-            if key in ("space", " "):
-                key_out = "{Space}"
-            elif key == "enter":
-                key_out = "{Enter}"
-            elif key == "backspace":
-                key_out = "{Backspace}"
-            elif key == "tab":
-                key_out = "{Tab}"
-            elif len(key) == 1 and key in "+^!#{}":
-                key_out = "{" + key + "}"
-            else:
-                key_out = key
-            f.write(f"{key_out}|{int(row['dwell'])}|{int(row['flight'])}\n")
-    return output_path
+    # ---------------------------------------------------------- saving
+    def save_sequence(self, sequence: List[Dict[str, Any]],
+                      out_path: str | None = None) -> str:
+        if out_path is None:
+            out_path = os.path.join(os.path.dirname(os.path.dirname(__file__)),
+                                    "typing_sequence.txt")
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write("key|dwell|flight\n")
+            for ev in sequence:
+                f.write(f"{self._ahk_key(ev['key'])}|"
+                        f"{int(ev['dwell'])}|{int(ev['flight'])}\n")
+        return out_path
+
+    @staticmethod
+    def _ahk_key(k: str) -> str:
+        if k in ("space", " "): return "{Space}"
+        if k == "enter": return "{Enter}"
+        if k == "backspace": return "{Backspace}"
+        if k == "tab": return "{Tab}"
+        if len(k) == 1 and k in "+^!#{}": return "{" + k + "}"
+        return k

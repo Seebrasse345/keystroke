@@ -89,7 +89,7 @@ class BiometricGUI(tk.Tk):
     def _init_main_tab(self):
         frame = ttk.Frame(self.main_tab, padding=10); frame.pack(fill=tk.BOTH, expand=True)
 
-        ttk.Label(frame, text="Generate & Replay Typing Sequence", style="Header.TLabel")                .pack(anchor=tk.W, pady=(0, 10))
+        ttk.Label(frame, text="Generate & Replay Typing Sequence", style="Header.TLabel").pack(anchor=tk.W, pady=(0, 10))
 
         # profile select
         pf = ttk.Frame(frame); pf.pack(fill=tk.X, pady=3)
@@ -105,24 +105,24 @@ class BiometricGUI(tk.Tk):
 
         # options
         opts = ttk.LabelFrame(frame, text="Generation Options"); opts.pack(fill=tk.X, pady=10, ipady=2)
-        ttk.Checkbutton(opts, text="Use my real typo pattern", variable=self.use_typos_var)                .pack(anchor=tk.W, padx=10, pady=5)
+        ttk.Checkbutton(opts, text="Use my real typo pattern", variable=self.use_typos_var).pack(anchor=tk.W, padx=10, pady=5)
 
         # buttons
         bf = ttk.Frame(frame); bf.pack(fill=tk.X, pady=12)
-        ttk.Button(bf, text="Generate Sequence", style="Generate.TButton", command=self._generate_sequence_ui)                .pack(side=tk.LEFT, padx=5)
-        ttk.Button(bf, text="Generate & Replay", style="Generate.TButton", command=self._generate_replay_ui)                .pack(side=tk.LEFT, padx=5)
+        ttk.Button(bf, text="Generate Sequence", style="Generate.TButton", command=self._generate_sequence_ui).pack(side=tk.LEFT, padx=5)
+        ttk.Button(bf, text="Generate & Replay", style="Generate.TButton", command=self._generate_replay_ui).pack(side=tk.LEFT, padx=5)
 
-        ttk.Label(frame, textvariable=self.status_var, relief=tk.SUNKEN, anchor=tk.W)                .pack(fill=tk.X, side=tk.BOTTOM, pady=(8,0))
+        ttk.Label(frame, textvariable=self.status_var, relief=tk.SUNKEN, anchor=tk.W).pack(fill=tk.X, side=tk.BOTTOM, pady=(8,0))
 
     # ------------------------------------------------------------------ RECORD TAB
     def _init_record_tab(self):
         frame = ttk.Frame(self.record_tab, padding=10); frame.pack(fill=tk.BOTH, expand=True)
-        ttk.Label(frame, text="Record Typing Biometrics", style="Header.TLabel")                .pack(anchor=tk.W, pady=(0,10))
+        ttk.Label(frame, text="Record Typing Biometrics", style="Header.TLabel").pack(anchor=tk.W, pady=(0,10))
 
         # profile select / create
         pf = ttk.Frame(frame); pf.pack(fill=tk.X, pady=3)
         ttk.Label(pf, text="Profile:").pack(side=tk.LEFT, padx=(0,5))
-        ttk.Combobox(pf, textvariable=self.user_var, values=self.users, width=18)                .pack(side=tk.LEFT, padx=5)
+        ttk.Combobox(pf, textvariable=self.user_var, values=self.users, width=18).pack(side=tk.LEFT, padx=5)
 
         ttk.Label(pf, text="New:").pack(side=tk.LEFT, padx=(12,5))
         ttk.Entry(pf, textvariable=self.new_user_var, width=15).pack(side=tk.LEFT)
@@ -140,7 +140,7 @@ class BiometricGUI(tk.Tk):
         self.stop_btn = ttk.Button(bf, text="Stop", state=tk.DISABLED, command=self._stop_recording)
         self.stop_btn.pack(side=tk.LEFT, padx=5)
 
-        ttk.Label(frame, textvariable=self.record_status_var, relief=tk.SUNKEN, anchor=tk.W)                .pack(fill=tk.X, side=tk.BOTTOM, pady=(8,0))
+        ttk.Label(frame, textvariable=self.record_status_var, relief=tk.SUNKEN, anchor=tk.W).pack(fill=tk.X, side=tk.BOTTOM, pady=(8,0))
 
     # ------------------------------------------------------------------ PROFILE TAB
     def _init_profile_tab(self):
@@ -149,7 +149,7 @@ class BiometricGUI(tk.Tk):
 
         pf = ttk.Frame(frame); pf.pack(fill=tk.X, pady=3)
         ttk.Label(pf, text="Profile:").pack(side=tk.LEFT, padx=(0,5))
-        ttk.Combobox(pf, textvariable=self.profile_var, values=self.users, state="readonly", width=18)                .pack(side=tk.LEFT, padx=5)
+        ttk.Combobox(pf, textvariable=self.profile_var, values=self.users, state="readonly", width=18).pack(side=tk.LEFT, padx=5)
         ttk.Button(pf, text="Refresh", command=self._refresh_users).pack(side=tk.LEFT, padx=5)
         ttk.Button(pf, text="Load", command=self._load_profile_ui).pack(side=tk.LEFT, padx=5)
 
@@ -174,7 +174,7 @@ class BiometricGUI(tk.Tk):
         df = ttk.LabelFrame(frame, text="Defaults"); df.pack(fill=tk.X, pady=8)
         uf = ttk.Frame(df); uf.pack(fill=tk.X, padx=10, pady=6)
         ttk.Label(uf, text="Default profile:").pack(side=tk.LEFT, padx=(0,5))
-        ttk.Combobox(uf, textvariable=self.default_user_var, values=self.users, width=18)                .pack(side=tk.LEFT, padx=5)
+        ttk.Combobox(uf, textvariable=self.default_user_var, values=self.users, width=18).pack(side=tk.LEFT, padx=5)
 
         ttk.Button(frame, text="Save Settings", command=self._save_settings).pack(pady=10)
 
@@ -232,6 +232,7 @@ class BiometricGUI(tk.Tk):
             self.status_var.set(f"Saved to {out}")
             messagebox.showinfo("Success", f"Sequence saved to:\n{out}")
         except Exception as e:
+            import traceback; traceback.print_exc()
             messagebox.showerror("Error", str(e))
             self.status_var.set("Error")
         finally:
@@ -251,6 +252,7 @@ class BiometricGUI(tk.Tk):
             self.status_var.set("Replaying…")
             Thread(target=self._run_ahk, args=(out,), daemon=True).start()
         except Exception as e:
+            import traceback; traceback.print_exc()
             messagebox.showerror("Error", str(e)); self.status_var.set("Ready")
 
     # ----------------------------- AHK
@@ -265,6 +267,7 @@ class BiometricGUI(tk.Tk):
             subprocess.run([self.ahk_path_var.get(), script, sequence_path], check=True)
             self.after(0, lambda: self.status_var.set("Replay done"))
         except Exception as e:
+            import traceback; traceback.print_exc()
             self.after(0, lambda: messagebox.showerror("AHK error",str(e)))
             self.after(0, lambda: self.status_var.set("Error"))
 
@@ -308,6 +311,7 @@ class BiometricGUI(tk.Tk):
             if not {"mean_dwell_times","mean_flight_times","session_count"}<=data.keys():
                 raise ValueError("Invalid profile file")
         except Exception as e:
+            import traceback; traceback.print_exc()
             messagebox.showerror("Error",f"Failed: {e}"); return
         name=os.path.basename(path).split("_profile.json")[0]+"_import"
         d=os.path.join(self._profiles_dir(),name); os.makedirs(d, exist_ok=True)
@@ -336,6 +340,7 @@ class BiometricGUI(tk.Tk):
             if self.default_user_var.get() in self.users:
                 self.user_var.set(self.default_user_var.get())
         except Exception as e:
+            import traceback; traceback.print_exc()
             print("Settings load error:",e)
 
     def _save_settings(self):
@@ -351,6 +356,7 @@ class BiometricGUI(tk.Tk):
             res=subprocess.run([self.ahk_path_var.get(),"/version"],capture_output=True,text=True,check=False)
             self.ahk_status_var.set("Installed: "+(res.stdout.strip() or "Unknown"))
         except Exception as e:
+            import traceback; traceback.print_exc()
             self.ahk_status_var.set(f"Error: {e}")
 
 # ----------------------------------------------------------------------
